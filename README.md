@@ -9,9 +9,9 @@ and **Enabling High Performance and Resource Utilization in Clustered Cache**
 ```
 .
 ├── client -> A Redis Client forked from vipshop/hiredis-vip. 
-├── server -> A Redis server modification from offical version 6.22, realize basic hot data copy and cold instance merge
-├── consistcode -> A Redis server modification from above server, add more consistency
-├── monitorcode -> A Redis server modification from above server, add dynamic monitor and copy
+├── server -> A Redis server modification from offical version 6.22 with basic hot data copy and cold instance merge
+├── consistcode -> A Redis server modification from above server, adding more consistency levels
+├── monitorcode -> A Redis server modification from above server, adding dynamic monitor and dynamic copy strategy
 └── tools  -> some tools used in experiment.
 ```
 

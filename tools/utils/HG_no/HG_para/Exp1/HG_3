@@ -1,0 +1,45 @@
+100 128_workloada 1
+100 128_workloadf 1
+150 128_workloadb 3
+100 128_workloadd 2
+100 128_workloadc 3
+
+100 112_workloada 1
+100 112_workloadf 1
+100 112_workloadb 2
+100 112_workloadd 2
+100 112_workloadc 3
+
+100 96_workloada 1
+100 96_workloadf 1
+100 96_workloadb 2
+100 96_workloadd 2
+100 96_workloadc 3
+100 80_workloadf 2
+100 80_workloadb 3
+100 80_workloadd 2
+100 80_workloadc 3
+
+100 64_workloada 1
+100 64_workloadf 2
+100 64_workloadb 3
+100 64_workloadd 2
+100 64_workloadc 3
+
+100 48_workloada 2
+100 48_workloadf 2
+100 48_workloadb 3
+100 48_workloadd 2
+100 48_workloadc 4
+
+100 32_workloada 2
+100 32_workloadf 2
+100 32_workloadb 5
+100 32_workloadd 3
+100 32_workloadc 7
+
+100 16_workloada 3
+100 16_workloadf 5
+100 16_workloadb 20
+100 16_workloadd 4
+100 16_workloadc 38

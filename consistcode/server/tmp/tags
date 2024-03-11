@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+GetCpuUsageRatio	getcpu.cpp	/^inline float GetCpuUsageRatio(int pid)$/;"	f
+GetCurrentPid	getcpu.cpp	/^inline int GetCurrentPid()$/;"	f
+GetMemoryUsage	getcpu.cpp	/^inline float GetMemoryUsage(int pid)$/;"	f
+PROCESS_ITEM	getcpu.cpp	40;"	d	file:
+VMRSS_LINE	getcpu.cpp	39;"	d	file:
+convert_time_format	getcpu.cpp	/^static uint64_t convert_time_format(const FILETIME* ftime)$/;"	f	file:
+get_cpu_proc_occupy	getcpu.cpp	/^static inline unsigned long get_cpu_proc_occupy(int pid)$/;"	f	file:
+get_cpu_total_occupy	getcpu.cpp	/^static inline unsigned long get_cpu_total_occupy()$/;"	f	file:
+get_items	getcpu.cpp	/^static const char* get_items(const char* buffer, unsigned int item)$/;"	f	file:
+main	getcpu.cpp	/^int main()$/;"	f

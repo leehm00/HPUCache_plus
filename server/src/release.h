@@ -1,0 +1,3 @@
+#define REDIS_GIT_SHA1 "71803a02"
+#define REDIS_GIT_DIRTY "39"
+#define REDIS_BUILD_ID "skv-node2-1649416421"

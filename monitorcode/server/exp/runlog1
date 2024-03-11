@@ -1,0 +1,2478 @@
+Machine = node1
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+Machine = node2
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+Machine = node3
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+Machine = node4
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+[29;1m>>> Performing hash slots allocation on 16 nodes...
+[0mMaster[0] -> Slots 0 - 1023
+Master[1] -> Slots 1024 - 2047
+Master[2] -> Slots 2048 - 3071
+Master[3] -> Slots 3072 - 4095
+Master[4] -> Slots 4096 - 5119
+Master[5] -> Slots 5120 - 6143
+Master[6] -> Slots 6144 - 7167
+Master[7] -> Slots 7168 - 8191
+Master[8] -> Slots 8192 - 9215
+Master[9] -> Slots 9216 - 10239
+Master[10] -> Slots 10240 - 11263
+Master[11] -> Slots 11264 - 12287
+Master[12] -> Slots 12288 - 13311
+Master[13] -> Slots 13312 - 14335
+Master[14] -> Slots 14336 - 15359
+Master[15] -> Slots 15360 - 16383
+M: b0ab876e798193d6bc4fdad01bbfa93b33807aab 10.0.0.51:21000
+   slots:[0-1023] (1024 slots) master
+M: 455ab86f049bcdf3cb7be3bb83d270aeaffdcfa4 10.0.0.51:21001
+   slots:[4096-5119] (1024 slots) master
+M: 45de121715b3762465e39bb4e6f589b8334c2db1 10.0.0.51:21002
+   slots:[8192-9215] (1024 slots) master
+M: 720637569ac9ec7c5b3a13821fadd3264abe89b1 10.0.0.51:21003
+   slots:[12288-13311] (1024 slots) master
+M: 9724916e1cc6a68324fc75c2c63babf0962904b5 10.0.0.52:21000
+   slots:[1024-2047] (1024 slots) master
+M: e81f3a4e913bfab38458676f0ad3917444827edd 10.0.0.52:21001
+   slots:[5120-6143] (1024 slots) master
+M: 45147d7359175b3ee4618bb8149e6bad3b49542b 10.0.0.52:21002
+   slots:[9216-10239] (1024 slots) master
+M: b14af556235ba38cce5b318599c3fca43d94f0b8 10.0.0.52:21003
+   slots:[13312-14335] (1024 slots) master
+M: 93d5a68f305b35c1869421dd0e8b800d3932341b 10.0.0.53:21000
+   slots:[2048-3071] (1024 slots) master
+M: f2fd6c69ff663e019994d12625ae33bf64d14e3e 10.0.0.53:21001
+   slots:[6144-7167] (1024 slots) master
+M: 1c3698b68a6808ed55351523459517bc75284e86 10.0.0.53:21002
+   slots:[10240-11263] (1024 slots) master
+M: d029c44abc6fbcae9779b41fa884e42c7b031752 10.0.0.53:21003
+   slots:[14336-15359] (1024 slots) master
+M: 25599be66bf006673f2d8e6978d4dc99ec5dfc41 10.0.0.54:21000
+   slots:[3072-4095] (1024 slots) master
+M: 4896538f4bf1c508127a3e765ec47d24f19903b4 10.0.0.54:21001
+   slots:[7168-8191] (1024 slots) master
+M: 964bdd7aa86c68b2ab5def7cb7b555d43f21a088 10.0.0.54:21002
+   slots:[11264-12287] (1024 slots) master
+M: a5b5c406a59a3b3bbc408ba91f4a8fc8d72f178a 10.0.0.54:21003
+   slots:[15360-16383] (1024 slots) master
+Can I set the above configuration? (type 'yes' to accept): [29;1m>>> Nodes configuration updated
+[0m[29;1m>>> Assign a different config epoch to each node
+[0m[29;1m>>> Sending CLUSTER MEET messages to join the cluster
+[0mWaiting for the cluster to join
+...............
+[29;1m>>> Performing Cluster Check (using node 10.0.0.51:21000)
+[0mM: b0ab876e798193d6bc4fdad01bbfa93b33807aab 10.0.0.51:21000
+   slots:[0-1023] (1024 slots) master
+M: 25599be66bf006673f2d8e6978d4dc99ec5dfc41 10.0.0.54:21000
+   slots:[3072-4095] (1024 slots) master
+M: a5b5c406a59a3b3bbc408ba91f4a8fc8d72f178a 10.0.0.54:21003
+   slots:[15360-16383] (1024 slots) master
+M: 9724916e1cc6a68324fc75c2c63babf0962904b5 10.0.0.52:21000
+   slots:[1024-2047] (1024 slots) master
+M: f2fd6c69ff663e019994d12625ae33bf64d14e3e 10.0.0.53:21001
+   slots:[6144-7167] (1024 slots) master
+M: d029c44abc6fbcae9779b41fa884e42c7b031752 10.0.0.53:21003
+   slots:[14336-15359] (1024 slots) master
+M: 45de121715b3762465e39bb4e6f589b8334c2db1 10.0.0.51:21002
+   slots:[8192-9215] (1024 slots) master
+M: 4896538f4bf1c508127a3e765ec47d24f19903b4 10.0.0.54:21001
+   slots:[7168-8191] (1024 slots) master
+M: 45147d7359175b3ee4618bb8149e6bad3b49542b 10.0.0.52:21002
+   slots:[9216-10239] (1024 slots) master
+M: 455ab86f049bcdf3cb7be3bb83d270aeaffdcfa4 10.0.0.51:21001
+   slots:[4096-5119] (1024 slots) master
+M: 720637569ac9ec7c5b3a13821fadd3264abe89b1 10.0.0.51:21003
+   slots:[12288-13311] (1024 slots) master
+M: b14af556235ba38cce5b318599c3fca43d94f0b8 10.0.0.52:21003
+   slots:[13312-14335] (1024 slots) master
+M: e81f3a4e913bfab38458676f0ad3917444827edd 10.0.0.52:21001
+   slots:[5120-6143] (1024 slots) master
+M: 1c3698b68a6808ed55351523459517bc75284e86 10.0.0.53:21002
+   slots:[10240-11263] (1024 slots) master
+M: 93d5a68f305b35c1869421dd0e8b800d3932341b 10.0.0.53:21000
+   slots:[2048-3071] (1024 slots) master
+M: 964bdd7aa86c68b2ab5def7cb7b555d43f21a088 10.0.0.54:21002
+   slots:[11264-12287] (1024 slots) master
+[32;1m[OK] All nodes agree about slots configuration.
+[0m[29;1m>>> Check for open slots...
+[0m[29;1m>>> Check slots coverage...
+[0m[32;1m[OK] All 16384 slots covered.
+[0mInstance num = 16
+Load Begin
+Load End
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+node1
+node2
+node3
+node4
+Machine = node1
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+Machine = node2
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+Machine = node3
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+Machine = node4
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+[29;1m>>> Performing hash slots allocation on 32 nodes...
+[0mMaster[0] -> Slots 0 - 511
+Master[1] -> Slots 512 - 1023
+Master[2] -> Slots 1024 - 1535
+Master[3] -> Slots 1536 - 2047
+Master[4] -> Slots 2048 - 2559
+Master[5] -> Slots 2560 - 3071
+Master[6] -> Slots 3072 - 3583
+Master[7] -> Slots 3584 - 4095
+Master[8] -> Slots 4096 - 4607
+Master[9] -> Slots 4608 - 5119
+Master[10] -> Slots 5120 - 5631
+Master[11] -> Slots 5632 - 6143
+Master[12] -> Slots 6144 - 6655
+Master[13] -> Slots 6656 - 7167
+Master[14] -> Slots 7168 - 7679
+Master[15] -> Slots 7680 - 8191
+Master[16] -> Slots 8192 - 8703
+Master[17] -> Slots 8704 - 9215
+Master[18] -> Slots 9216 - 9727
+Master[19] -> Slots 9728 - 10239
+Master[20] -> Slots 10240 - 10751
+Master[21] -> Slots 10752 - 11263
+Master[22] -> Slots 11264 - 11775
+Master[23] -> Slots 11776 - 12287
+Master[24] -> Slots 12288 - 12799
+Master[25] -> Slots 12800 - 13311
+Master[26] -> Slots 13312 - 13823
+Master[27] -> Slots 13824 - 14335
+Master[28] -> Slots 14336 - 14847
+Master[29] -> Slots 14848 - 15359
+Master[30] -> Slots 15360 - 15871
+Master[31] -> Slots 15872 - 16383
+M: c2691199d00df5deaddc55f4b54e6013c3c6713f 10.0.0.51:21000
+   slots:[0-511] (512 slots) master
+M: f7116042865f84c7ec12ea7e3f6eb29d9a2ea65c 10.0.0.51:21001
+   slots:[2048-2559] (512 slots) master
+M: 4156e3485e50dffd970d0094498be769ea9c874f 10.0.0.51:21002
+   slots:[4096-4607] (512 slots) master
+M: a2f7e03fea89c6fc38ba5614c1d2b99f5b7d426a 10.0.0.51:21003
+   slots:[6144-6655] (512 slots) master
+M: 9bf78ac6c2003725ceb544317d0862c35d23e3ed 10.0.0.51:21004
+   slots:[8192-8703] (512 slots) master
+M: 7cb887a637ba550228b3965d7c7d21d896e96c15 10.0.0.51:21005
+   slots:[10240-10751] (512 slots) master
+M: 1e96f27d9377deec9297cc31941217d8a25969fc 10.0.0.51:21006
+   slots:[12288-12799] (512 slots) master
+M: f9cbaaefd6380bcb66cf897c66ab96d3a0198b7c 10.0.0.51:21007
+   slots:[14336-14847] (512 slots) master
+M: 891498159ecc1eeb9d388ef3590070cf7258abda 10.0.0.52:21000
+   slots:[512-1023] (512 slots) master
+M: eac49d4b57df28c37688bc740faef2fbb1a32102 10.0.0.52:21001
+   slots:[2560-3071] (512 slots) master
+M: 6ee8871c7d2fb54fd1c4c641c645ccfb4a2dee62 10.0.0.52:21002
+   slots:[4608-5119] (512 slots) master
+M: 8c75125454b9432a27ef931f9afee1e424962475 10.0.0.52:21003
+   slots:[6656-7167] (512 slots) master
+M: 45fcaae3d6c73b20541f8b8d861b450e11e4993d 10.0.0.52:21004
+   slots:[8704-9215] (512 slots) master
+M: ff8ad3fc4d0f7d5ccfd7b49cb3ae5d8d05e8697b 10.0.0.52:21005
+   slots:[10752-11263] (512 slots) master
+M: 2ea3e1670c7d283ce216f6fbb0d6a46ec048734a 10.0.0.52:21006
+   slots:[12800-13311] (512 slots) master
+M: 9ad6cca1712ddb34fd48c2009f20715a3d1f71c7 10.0.0.52:21007
+   slots:[14848-15359] (512 slots) master
+M: d22625bbbab4b9b40c2bb4b638316711c2c06113 10.0.0.53:21000
+   slots:[1024-1535] (512 slots) master
+M: 2fd40ffac4e3c5a8c02971e8e88267e495bca184 10.0.0.53:21001
+   slots:[3072-3583] (512 slots) master
+M: bb57d403cdcac7f3ddd7752f211fc843c7a2f410 10.0.0.53:21002
+   slots:[5120-5631] (512 slots) master
+M: 7b571201fc799d5df56eaf9110dd7a609b0d9720 10.0.0.53:21003
+   slots:[7168-7679] (512 slots) master
+M: ec9cd28660e5b4559e2735dc8a7486b196fbd21c 10.0.0.53:21004
+   slots:[9216-9727] (512 slots) master
+M: a1f9b65698d88b123a4186fdb6507cad02d5547e 10.0.0.53:21005
+   slots:[11264-11775] (512 slots) master
+M: dddf47b0670f70b01bc6cf255e812f9312bc80ec 10.0.0.53:21006
+   slots:[13312-13823] (512 slots) master
+M: a70300ebc31430887e6a83e5a5050c4f39c264e4 10.0.0.53:21007
+   slots:[15360-15871] (512 slots) master
+M: f173fafc2ad446bb3e3b974593fd6f88b02d85b0 10.0.0.54:21000
+   slots:[1536-2047] (512 slots) master
+M: 414e1b80f6b42e368b029db23dd55233f44a5c2e 10.0.0.54:21001
+   slots:[3584-4095] (512 slots) master
+M: 89fa925c32ff8144e7d295ac78555fd71b26ec67 10.0.0.54:21002
+   slots:[5632-6143] (512 slots) master
+M: 0dfa55e9b4f0b6a2489c7f771fd1a183c55e2339 10.0.0.54:21003
+   slots:[7680-8191] (512 slots) master
+M: 47cf6f732f4c4310c21d61839ce3c6cd3c01484a 10.0.0.54:21004
+   slots:[9728-10239] (512 slots) master
+M: bbe46dc23e2b915e663a2ec4b47272e704ccbb7b 10.0.0.54:21005
+   slots:[11776-12287] (512 slots) master
+M: 8472a05b705856a058a0765abdfc2afa4a1465b0 10.0.0.54:21006
+   slots:[13824-14335] (512 slots) master
+M: 64d2a7ec1be82ed0e55545e8f98553415f2225c0 10.0.0.54:21007
+   slots:[15872-16383] (512 slots) master
+Can I set the above configuration? (type 'yes' to accept): [29;1m>>> Nodes configuration updated
+[0m[29;1m>>> Assign a different config epoch to each node
+[0m[29;1m>>> Sending CLUSTER MEET messages to join the cluster
+[0mWaiting for the cluster to join
+...............
+[29;1m>>> Performing Cluster Check (using node 10.0.0.51:21000)
+[0mM: c2691199d00df5deaddc55f4b54e6013c3c6713f 10.0.0.51:21000
+   slots:[0-511] (512 slots) master
+M: a1f9b65698d88b123a4186fdb6507cad02d5547e 10.0.0.53:21005
+   slots:[11264-11775] (512 slots) master
+M: bb57d403cdcac7f3ddd7752f211fc843c7a2f410 10.0.0.53:21002
+   slots:[5120-5631] (512 slots) master
+M: 414e1b80f6b42e368b029db23dd55233f44a5c2e 10.0.0.54:21001
+   slots:[3584-4095] (512 slots) master
+M: 45fcaae3d6c73b20541f8b8d861b450e11e4993d 10.0.0.52:21004
+   slots:[8704-9215] (512 slots) master
+M: d22625bbbab4b9b40c2bb4b638316711c2c06113 10.0.0.53:21000
+   slots:[1024-1535] (512 slots) master
+M: 8472a05b705856a058a0765abdfc2afa4a1465b0 10.0.0.54:21006
+   slots:[13824-14335] (512 slots) master
+M: 4156e3485e50dffd970d0094498be769ea9c874f 10.0.0.51:21002
+   slots:[4096-4607] (512 slots) master
+M: a2f7e03fea89c6fc38ba5614c1d2b99f5b7d426a 10.0.0.51:21003
+   slots:[6144-6655] (512 slots) master
+M: f173fafc2ad446bb3e3b974593fd6f88b02d85b0 10.0.0.54:21000
+   slots:[1536-2047] (512 slots) master
+M: 8c75125454b9432a27ef931f9afee1e424962475 10.0.0.52:21003
+   slots:[6656-7167] (512 slots) master
+M: a70300ebc31430887e6a83e5a5050c4f39c264e4 10.0.0.53:21007
+   slots:[15360-15871] (512 slots) master
+M: 0dfa55e9b4f0b6a2489c7f771fd1a183c55e2339 10.0.0.54:21003
+   slots:[7680-8191] (512 slots) master
+M: 2ea3e1670c7d283ce216f6fbb0d6a46ec048734a 10.0.0.52:21006
+   slots:[12800-13311] (512 slots) master
+M: dddf47b0670f70b01bc6cf255e812f9312bc80ec 10.0.0.53:21006
+   slots:[13312-13823] (512 slots) master
+M: 891498159ecc1eeb9d388ef3590070cf7258abda 10.0.0.52:21000
+   slots:[512-1023] (512 slots) master
+M: f9cbaaefd6380bcb66cf897c66ab96d3a0198b7c 10.0.0.51:21007
+   slots:[14336-14847] (512 slots) master
+M: f7116042865f84c7ec12ea7e3f6eb29d9a2ea65c 10.0.0.51:21001
+   slots:[2048-2559] (512 slots) master
+M: 47cf6f732f4c4310c21d61839ce3c6cd3c01484a 10.0.0.54:21004
+   slots:[9728-10239] (512 slots) master
+M: 64d2a7ec1be82ed0e55545e8f98553415f2225c0 10.0.0.54:21007
+   slots:[15872-16383] (512 slots) master
+M: 89fa925c32ff8144e7d295ac78555fd71b26ec67 10.0.0.54:21002
+   slots:[5632-6143] (512 slots) master
+M: eac49d4b57df28c37688bc740faef2fbb1a32102 10.0.0.52:21001
+   slots:[2560-3071] (512 slots) master
+M: 9bf78ac6c2003725ceb544317d0862c35d23e3ed 10.0.0.51:21004
+   slots:[8192-8703] (512 slots) master
+M: 9ad6cca1712ddb34fd48c2009f20715a3d1f71c7 10.0.0.52:21007
+   slots:[14848-15359] (512 slots) master
+M: ff8ad3fc4d0f7d5ccfd7b49cb3ae5d8d05e8697b 10.0.0.52:21005
+   slots:[10752-11263] (512 slots) master
+M: 6ee8871c7d2fb54fd1c4c641c645ccfb4a2dee62 10.0.0.52:21002
+   slots:[4608-5119] (512 slots) master
+M: ec9cd28660e5b4559e2735dc8a7486b196fbd21c 10.0.0.53:21004
+   slots:[9216-9727] (512 slots) master
+M: 2fd40ffac4e3c5a8c02971e8e88267e495bca184 10.0.0.53:21001
+   slots:[3072-3583] (512 slots) master
+M: 7cb887a637ba550228b3965d7c7d21d896e96c15 10.0.0.51:21005
+   slots:[10240-10751] (512 slots) master
+M: bbe46dc23e2b915e663a2ec4b47272e704ccbb7b 10.0.0.54:21005
+   slots:[11776-12287] (512 slots) master
+M: 7b571201fc799d5df56eaf9110dd7a609b0d9720 10.0.0.53:21003
+   slots:[7168-7679] (512 slots) master
+M: 1e96f27d9377deec9297cc31941217d8a25969fc 10.0.0.51:21006
+   slots:[12288-12799] (512 slots) master
+[32;1m[OK] All nodes agree about slots configuration.
+[0m[29;1m>>> Check for open slots...
+[0m[29;1m>>> Check slots coverage...
+[0m[32;1m[OK] All 16384 slots covered.
+[0mInstance num = 32
+Load Begin
+Load End
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+node1
+node2
+node3
+node4
+Machine = node1
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+Machine = node2
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+Machine = node3
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+Machine = node4
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+[29;1m>>> Performing hash slots allocation on 48 nodes...
+[0mMaster[0] -> Slots 0 - 340
+Master[1] -> Slots 341 - 682
+Master[2] -> Slots 683 - 1023
+Master[3] -> Slots 1024 - 1364
+Master[4] -> Slots 1365 - 1706
+Master[5] -> Slots 1707 - 2047
+Master[6] -> Slots 2048 - 2388
+Master[7] -> Slots 2389 - 2730
+Master[8] -> Slots 2731 - 3071
+Master[9] -> Slots 3072 - 3412
+Master[10] -> Slots 3413 - 3754
+Master[11] -> Slots 3755 - 4095
+Master[12] -> Slots 4096 - 4436
+Master[13] -> Slots 4437 - 4778
+Master[14] -> Slots 4779 - 5119
+Master[15] -> Slots 5120 - 5460
+Master[16] -> Slots 5461 - 5802
+Master[17] -> Slots 5803 - 6143
+Master[18] -> Slots 6144 - 6484
+Master[19] -> Slots 6485 - 6826
+Master[20] -> Slots 6827 - 7167
+Master[21] -> Slots 7168 - 7508
+Master[22] -> Slots 7509 - 7850
+Master[23] -> Slots 7851 - 8191
+Master[24] -> Slots 8192 - 8532
+Master[25] -> Slots 8533 - 8874
+Master[26] -> Slots 8875 - 9215
+Master[27] -> Slots 9216 - 9556
+Master[28] -> Slots 9557 - 9898
+Master[29] -> Slots 9899 - 10239
+Master[30] -> Slots 10240 - 10580
+Master[31] -> Slots 10581 - 10922
+Master[32] -> Slots 10923 - 11263
+Master[33] -> Slots 11264 - 11604
+Master[34] -> Slots 11605 - 11946
+Master[35] -> Slots 11947 - 12287
+Master[36] -> Slots 12288 - 12628
+Master[37] -> Slots 12629 - 12970
+Master[38] -> Slots 12971 - 13311
+Master[39] -> Slots 13312 - 13652
+Master[40] -> Slots 13653 - 13994
+Master[41] -> Slots 13995 - 14335
+Master[42] -> Slots 14336 - 14676
+Master[43] -> Slots 14677 - 15018
+Master[44] -> Slots 15019 - 15359
+Master[45] -> Slots 15360 - 15700
+Master[46] -> Slots 15701 - 16042
+Master[47] -> Slots 16043 - 16383
+M: d7ed301b5c0032d520cfd4578e2aa91c6dc5fcd3 10.0.0.51:21000
+   slots:[0-340] (341 slots) master
+M: 38e64397667d1fc14a245d818b4b881f67ce050a 10.0.0.51:21001
+   slots:[1365-1706] (342 slots) master
+M: c95179b6049f8cd3390dd07dd28f6176408a175e 10.0.0.51:21002
+   slots:[2731-3071] (341 slots) master
+M: 9e8e442bb430def39a1566fdd3fd1a9cfbbd9d37 10.0.0.51:21003
+   slots:[4096-4436] (341 slots) master
+M: 5d197f6b4afd88682bbf7cdb788d040b419e7b16 10.0.0.51:21004
+   slots:[5461-5802] (342 slots) master
+M: 617706b2466a2f9f9e52f27bf1cf93a34e23f733 10.0.0.51:21005
+   slots:[6827-7167] (341 slots) master
+M: 213a47b25a98aca5978b2788462370bc73ddda97 10.0.0.51:21006
+   slots:[8192-8532] (341 slots) master
+M: 5fbf3b5ef34ce504d56b988e06cf383b93ffa470 10.0.0.51:21007
+   slots:[9557-9898] (342 slots) master
+M: 82992e3ecda3dff364e515b3aa56b2f0f0416227 10.0.0.51:21008
+   slots:[10923-11263] (341 slots) master
+M: fa34ec2b226d15a8376d70ffa14bbac4380eef35 10.0.0.51:21009
+   slots:[12288-12628] (341 slots) master
+M: 089c688e8d742a1deaea88642b4bd2a150a76702 10.0.0.51:21010
+   slots:[13653-13994] (342 slots) master
+M: 0a8f744446286330f376d743653e59160b80dbca 10.0.0.51:21011
+   slots:[15019-15359] (341 slots) master
+M: 1b771617f246f1041447cf796cca998d9abdbc7b 10.0.0.52:21000
+   slots:[341-682] (342 slots) master
+M: e1f5d3c1a519047ca1345046dfdca6234cf2ceee 10.0.0.52:21001
+   slots:[1707-2047] (341 slots) master
+M: fe20e840f6a8d098817e3739c760c514fa13e1fa 10.0.0.52:21002
+   slots:[3072-3412] (341 slots) master
+M: efd1a56490c47cf54e176ff58ce9d02927fa7ade 10.0.0.52:21003
+   slots:[4437-4778] (342 slots) master
+M: 980fba0c733db3240798dfe007c37faa7c9bb558 10.0.0.52:21004
+   slots:[5803-6143] (341 slots) master
+M: 4fcb31031fc597641d3e91811f7414de3ba43be0 10.0.0.52:21005
+   slots:[7168-7508] (341 slots) master
+M: c20426aa3c2c5b6ff71360a9813eb36ff60a2001 10.0.0.52:21006
+   slots:[8533-8874] (342 slots) master
+M: b5107abab69cadd1b042d3a8884c1febfb791684 10.0.0.52:21007
+   slots:[9899-10239] (341 slots) master
+M: d5ae8a2a32ebe8679941511b967ca63534c5f02a 10.0.0.52:21008
+   slots:[11264-11604] (341 slots) master
+M: 2b9ae9b2df422b8fc558aabf13016cf5186fe205 10.0.0.52:21009
+   slots:[12629-12970] (342 slots) master
+M: 6cce3025143573ddd5a06f070b287ed3d6c22825 10.0.0.52:21010
+   slots:[13995-14335] (341 slots) master
+M: 8eff39833acc1bf26e84e9fdb29256d3551c173a 10.0.0.52:21011
+   slots:[15360-15700] (341 slots) master
+M: 7517cf0ad1e4fdf601a63ad3f0ce36fa5f2490e1 10.0.0.53:21000
+   slots:[683-1023] (341 slots) master
+M: c897ce4c797cc3bd5de1942a8dd14ab02450250b 10.0.0.53:21001
+   slots:[2048-2388] (341 slots) master
+M: efc445695e98c4a385b02794d2625b33797c70ab 10.0.0.53:21002
+   slots:[3413-3754] (342 slots) master
+M: 7fe00aa22950f1002a08bee916f1b943a20aa09d 10.0.0.53:21003
+   slots:[4779-5119] (341 slots) master
+M: 67aee5e34ca8a522c51730dba9aa4869f6e408bc 10.0.0.53:21004
+   slots:[6144-6484] (341 slots) master
+M: 1f1786099180028442231fee73208abb2572d2e3 10.0.0.53:21005
+   slots:[7509-7850] (342 slots) master
+M: 9307bc1946de142c8c1fc880c1ad3baf6f9e5e42 10.0.0.53:21006
+   slots:[8875-9215] (341 slots) master
+M: 930886d24a693aa064c7926456cd966701b906d0 10.0.0.53:21007
+   slots:[10240-10580] (341 slots) master
+M: 3c6985bc16183ad1ab99ee0ac3b4a7f21290c70c 10.0.0.53:21008
+   slots:[11605-11946] (342 slots) master
+M: 5e96f9d87cd9d96c5f768cfb45797548b599a53e 10.0.0.53:21009
+   slots:[12971-13311] (341 slots) master
+M: e27ae556dd591169df8118b1cb25e52592f7f3f9 10.0.0.53:21010
+   slots:[14336-14676] (341 slots) master
+M: 1a273d5f7fadaa28c722048686777eeb14016633 10.0.0.53:21011
+   slots:[15701-16042] (342 slots) master
+M: ad1e572261d78dc13ebab9a367c81975f28d304e 10.0.0.54:21000
+   slots:[1024-1364] (341 slots) master
+M: 7b54c77765ab1bd24239363361db637586c84d1d 10.0.0.54:21001
+   slots:[2389-2730] (342 slots) master
+M: ad7d907a586f5e5327c9c1ce31454e722077bf35 10.0.0.54:21002
+   slots:[3755-4095] (341 slots) master
+M: 53d5f92934c1f41de006c9999ffcd21ed9a8a365 10.0.0.54:21003
+   slots:[5120-5460] (341 slots) master
+M: b186ea390e37b53efa056ea2ea517ccce6636731 10.0.0.54:21004
+   slots:[6485-6826] (342 slots) master
+M: 9a8c270e25583dcbddb5f18bc6d90d8b0fef4029 10.0.0.54:21005
+   slots:[7851-8191] (341 slots) master
+M: 047b4832fa37ae891e2ce716470e31c6b0d8881a 10.0.0.54:21006
+   slots:[9216-9556] (341 slots) master
+M: f26d72ec029f17c06e7a8babf6dccb252ee134ab 10.0.0.54:21007
+   slots:[10581-10922] (342 slots) master
+M: 00e50e83a408f417a56529e14d37212a1b90690a 10.0.0.54:21008
+   slots:[11947-12287] (341 slots) master
+M: e24de7bbf5fd453da0205e236642a58dc7facb1f 10.0.0.54:21009
+   slots:[13312-13652] (341 slots) master
+M: 0b2ad04956c5a2d1f25e0c78cbb1dcb23bcddbd9 10.0.0.54:21010
+   slots:[14677-15018] (342 slots) master
+M: d7790c627b34572f9dcd8f08f68f5609527df909 10.0.0.54:21011
+   slots:[16043-16383] (341 slots) master
+Can I set the above configuration? (type 'yes' to accept): [29;1m>>> Nodes configuration updated
+[0m[29;1m>>> Assign a different config epoch to each node
+[0m[29;1m>>> Sending CLUSTER MEET messages to join the cluster
+[0mWaiting for the cluster to join
+....................
+[29;1m>>> Performing Cluster Check (using node 10.0.0.51:21000)
+[0mM: d7ed301b5c0032d520cfd4578e2aa91c6dc5fcd3 10.0.0.51:21000
+   slots:[0-340] (341 slots) master
+M: 53d5f92934c1f41de006c9999ffcd21ed9a8a365 10.0.0.54:21003
+   slots:[5120-5460] (341 slots) master
+M: 82992e3ecda3dff364e515b3aa56b2f0f0416227 10.0.0.51:21008
+   slots:[10923-11263] (341 slots) master
+M: 5fbf3b5ef34ce504d56b988e06cf383b93ffa470 10.0.0.51:21007
+   slots:[9557-9898] (342 slots) master
+M: 7517cf0ad1e4fdf601a63ad3f0ce36fa5f2490e1 10.0.0.53:21000
+   slots:[683-1023] (341 slots) master
+M: 7fe00aa22950f1002a08bee916f1b943a20aa09d 10.0.0.53:21003
+   slots:[4779-5119] (341 slots) master
+M: 9e8e442bb430def39a1566fdd3fd1a9cfbbd9d37 10.0.0.51:21003
+   slots:[4096-4436] (341 slots) master
+M: ad7d907a586f5e5327c9c1ce31454e722077bf35 10.0.0.54:21002
+   slots:[3755-4095] (341 slots) master
+M: 6cce3025143573ddd5a06f070b287ed3d6c22825 10.0.0.52:21010
+   slots:[13995-14335] (341 slots) master
+M: 5d197f6b4afd88682bbf7cdb788d040b419e7b16 10.0.0.51:21004
+   slots:[5461-5802] (342 slots) master
+M: 047b4832fa37ae891e2ce716470e31c6b0d8881a 10.0.0.54:21006
+   slots:[9216-9556] (341 slots) master
+M: 5e96f9d87cd9d96c5f768cfb45797548b599a53e 10.0.0.53:21009
+   slots:[12971-13311] (341 slots) master
+M: 9a8c270e25583dcbddb5f18bc6d90d8b0fef4029 10.0.0.54:21005
+   slots:[7851-8191] (341 slots) master
+M: ad1e572261d78dc13ebab9a367c81975f28d304e 10.0.0.54:21000
+   slots:[1024-1364] (341 slots) master
+M: 7b54c77765ab1bd24239363361db637586c84d1d 10.0.0.54:21001
+   slots:[2389-2730] (342 slots) master
+M: e27ae556dd591169df8118b1cb25e52592f7f3f9 10.0.0.53:21010
+   slots:[14336-14676] (341 slots) master
+M: 38e64397667d1fc14a245d818b4b881f67ce050a 10.0.0.51:21001
+   slots:[1365-1706] (342 slots) master
+M: e24de7bbf5fd453da0205e236642a58dc7facb1f 10.0.0.54:21009
+   slots:[13312-13652] (341 slots) master
+M: 2b9ae9b2df422b8fc558aabf13016cf5186fe205 10.0.0.52:21009
+   slots:[12629-12970] (342 slots) master
+M: 980fba0c733db3240798dfe007c37faa7c9bb558 10.0.0.52:21004
+   slots:[5803-6143] (341 slots) master
+M: f26d72ec029f17c06e7a8babf6dccb252ee134ab 10.0.0.54:21007
+   slots:[10581-10922] (342 slots) master
+M: c897ce4c797cc3bd5de1942a8dd14ab02450250b 10.0.0.53:21001
+   slots:[2048-2388] (341 slots) master
+M: fa34ec2b226d15a8376d70ffa14bbac4380eef35 10.0.0.51:21009
+   slots:[12288-12628] (341 slots) master
+M: 0b2ad04956c5a2d1f25e0c78cbb1dcb23bcddbd9 10.0.0.54:21010
+   slots:[14677-15018] (342 slots) master
+M: 4fcb31031fc597641d3e91811f7414de3ba43be0 10.0.0.52:21005
+   slots:[7168-7508] (341 slots) master
+M: 089c688e8d742a1deaea88642b4bd2a150a76702 10.0.0.51:21010
+   slots:[13653-13994] (342 slots) master
+M: 00e50e83a408f417a56529e14d37212a1b90690a 10.0.0.54:21008
+   slots:[11947-12287] (341 slots) master
+M: 1f1786099180028442231fee73208abb2572d2e3 10.0.0.53:21005
+   slots:[7509-7850] (342 slots) master
+M: 67aee5e34ca8a522c51730dba9aa4869f6e408bc 10.0.0.53:21004
+   slots:[6144-6484] (341 slots) master
+M: d5ae8a2a32ebe8679941511b967ca63534c5f02a 10.0.0.52:21008
+   slots:[11264-11604] (341 slots) master
+M: 1b771617f246f1041447cf796cca998d9abdbc7b 10.0.0.52:21000
+   slots:[341-682] (342 slots) master
+M: 0a8f744446286330f376d743653e59160b80dbca 10.0.0.51:21011
+   slots:[15019-15359] (341 slots) master
+M: b186ea390e37b53efa056ea2ea517ccce6636731 10.0.0.54:21004
+   slots:[6485-6826] (342 slots) master
+M: 213a47b25a98aca5978b2788462370bc73ddda97 10.0.0.51:21006
+   slots:[8192-8532] (341 slots) master
+M: 8eff39833acc1bf26e84e9fdb29256d3551c173a 10.0.0.52:21011
+   slots:[15360-15700] (341 slots) master
+M: 617706b2466a2f9f9e52f27bf1cf93a34e23f733 10.0.0.51:21005
+   slots:[6827-7167] (341 slots) master
+M: c95179b6049f8cd3390dd07dd28f6176408a175e 10.0.0.51:21002
+   slots:[2731-3071] (341 slots) master
+M: b5107abab69cadd1b042d3a8884c1febfb791684 10.0.0.52:21007
+   slots:[9899-10239] (341 slots) master
+M: fe20e840f6a8d098817e3739c760c514fa13e1fa 10.0.0.52:21002
+   slots:[3072-3412] (341 slots) master
+M: 1a273d5f7fadaa28c722048686777eeb14016633 10.0.0.53:21011
+   slots:[15701-16042] (342 slots) master
+M: e1f5d3c1a519047ca1345046dfdca6234cf2ceee 10.0.0.52:21001
+   slots:[1707-2047] (341 slots) master
+M: efd1a56490c47cf54e176ff58ce9d02927fa7ade 10.0.0.52:21003
+   slots:[4437-4778] (342 slots) master
+M: 9307bc1946de142c8c1fc880c1ad3baf6f9e5e42 10.0.0.53:21006
+   slots:[8875-9215] (341 slots) master
+M: c20426aa3c2c5b6ff71360a9813eb36ff60a2001 10.0.0.52:21006
+   slots:[8533-8874] (342 slots) master
+M: 930886d24a693aa064c7926456cd966701b906d0 10.0.0.53:21007
+   slots:[10240-10580] (341 slots) master
+M: d7790c627b34572f9dcd8f08f68f5609527df909 10.0.0.54:21011
+   slots:[16043-16383] (341 slots) master
+M: efc445695e98c4a385b02794d2625b33797c70ab 10.0.0.53:21002
+   slots:[3413-3754] (342 slots) master
+M: 3c6985bc16183ad1ab99ee0ac3b4a7f21290c70c 10.0.0.53:21008
+   slots:[11605-11946] (342 slots) master
+[32;1m[OK] All nodes agree about slots configuration.
+[0m[29;1m>>> Check for open slots...
+[0m[29;1m>>> Check slots coverage...
+[0m[32;1m[OK] All 16384 slots covered.
+[0mInstance num = 48
+Load Begin
+Load End
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+node1
+node2
+node3
+node4
+Machine = node1
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+>> Port 21012
+>> Port 21013
+>> Port 21014
+>> Port 21015
+Machine = node2
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+>> Port 21012
+>> Port 21013
+>> Port 21014
+>> Port 21015
+Machine = node3
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+>> Port 21012
+>> Port 21013
+>> Port 21014
+>> Port 21015
+Machine = node4
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+>> Port 21012
+>> Port 21013
+>> Port 21014
+>> Port 21015
+[29;1m>>> Performing hash slots allocation on 64 nodes...
+[0mMaster[0] -> Slots 0 - 255
+Master[1] -> Slots 256 - 511
+Master[2] -> Slots 512 - 767
+Master[3] -> Slots 768 - 1023
+Master[4] -> Slots 1024 - 1279
+Master[5] -> Slots 1280 - 1535
+Master[6] -> Slots 1536 - 1791
+Master[7] -> Slots 1792 - 2047
+Master[8] -> Slots 2048 - 2303
+Master[9] -> Slots 2304 - 2559
+Master[10] -> Slots 2560 - 2815
+Master[11] -> Slots 2816 - 3071
+Master[12] -> Slots 3072 - 3327
+Master[13] -> Slots 3328 - 3583
+Master[14] -> Slots 3584 - 3839
+Master[15] -> Slots 3840 - 4095
+Master[16] -> Slots 4096 - 4351
+Master[17] -> Slots 4352 - 4607
+Master[18] -> Slots 4608 - 4863
+Master[19] -> Slots 4864 - 5119
+Master[20] -> Slots 5120 - 5375
+Master[21] -> Slots 5376 - 5631
+Master[22] -> Slots 5632 - 5887
+Master[23] -> Slots 5888 - 6143
+Master[24] -> Slots 6144 - 6399
+Master[25] -> Slots 6400 - 6655
+Master[26] -> Slots 6656 - 6911
+Master[27] -> Slots 6912 - 7167
+Master[28] -> Slots 7168 - 7423
+Master[29] -> Slots 7424 - 7679
+Master[30] -> Slots 7680 - 7935
+Master[31] -> Slots 7936 - 8191
+Master[32] -> Slots 8192 - 8447
+Master[33] -> Slots 8448 - 8703
+Master[34] -> Slots 8704 - 8959
+Master[35] -> Slots 8960 - 9215
+Master[36] -> Slots 9216 - 9471
+Master[37] -> Slots 9472 - 9727
+Master[38] -> Slots 9728 - 9983
+Master[39] -> Slots 9984 - 10239
+Master[40] -> Slots 10240 - 10495
+Master[41] -> Slots 10496 - 10751
+Master[42] -> Slots 10752 - 11007
+Master[43] -> Slots 11008 - 11263
+Master[44] -> Slots 11264 - 11519
+Master[45] -> Slots 11520 - 11775
+Master[46] -> Slots 11776 - 12031
+Master[47] -> Slots 12032 - 12287
+Master[48] -> Slots 12288 - 12543
+Master[49] -> Slots 12544 - 12799
+Master[50] -> Slots 12800 - 13055
+Master[51] -> Slots 13056 - 13311
+Master[52] -> Slots 13312 - 13567
+Master[53] -> Slots 13568 - 13823
+Master[54] -> Slots 13824 - 14079
+Master[55] -> Slots 14080 - 14335
+Master[56] -> Slots 14336 - 14591
+Master[57] -> Slots 14592 - 14847
+Master[58] -> Slots 14848 - 15103
+Master[59] -> Slots 15104 - 15359
+Master[60] -> Slots 15360 - 15615
+Master[61] -> Slots 15616 - 15871
+Master[62] -> Slots 15872 - 16127
+Master[63] -> Slots 16128 - 16383
+M: 45c5ec35b52b9b5120dfb1775d9462c8a270b1de 10.0.0.51:21000
+   slots:[0-255] (256 slots) master
+M: 70576748385a922ead34998c5ffaffdcc54ce97e 10.0.0.51:21001
+   slots:[1024-1279] (256 slots) master
+M: fbd1dbb4b40a157aa8e74841bfcc2d16f3ee3380 10.0.0.51:21002
+   slots:[2048-2303] (256 slots) master
+M: 5f62f5755fa0709c949a5178d3b9708d6ef3bbb3 10.0.0.51:21003
+   slots:[3072-3327] (256 slots) master
+M: 736b8dbaf68c6b9d9826cb6ea993cbc65116a317 10.0.0.51:21004
+   slots:[4096-4351] (256 slots) master
+M: 314228de2c11a1fbabd711b4539bc37df3610d8f 10.0.0.51:21005
+   slots:[5120-5375] (256 slots) master
+M: 10e2f96903737cbe8e039a58eb143bcf653ef988 10.0.0.51:21006
+   slots:[6144-6399] (256 slots) master
+M: af0a06a8e742716c9a9fc3dfbd0e0240cbf80193 10.0.0.51:21007
+   slots:[7168-7423] (256 slots) master
+M: a4005fd512df77452a37d93e41edfc6f7fb03066 10.0.0.51:21008
+   slots:[8192-8447] (256 slots) master
+M: 6f5afb32286877d33f6673cf7de1c8a57d81272a 10.0.0.51:21009
+   slots:[9216-9471] (256 slots) master
+M: 29e3095bd1e1aefb3be16cf5296702d342f6987b 10.0.0.51:21010
+   slots:[10240-10495] (256 slots) master
+M: 829a7982df3228258e57a6f0329c44310e99496f 10.0.0.51:21011
+   slots:[11264-11519] (256 slots) master
+M: d247c4fe0b14adbca2c008692f8dc4e5a862d153 10.0.0.51:21012
+   slots:[12288-12543] (256 slots) master
+M: fcd01180ef66d7832b249decffe79a714a60ab67 10.0.0.51:21013
+   slots:[13312-13567] (256 slots) master
+M: b650bd8d6fed15e0e379abcdb347000c74e0763f 10.0.0.51:21014
+   slots:[14336-14591] (256 slots) master
+M: 837e59ced64faedd459fa3ddc809e76412824ac9 10.0.0.51:21015
+   slots:[15360-15615] (256 slots) master
+M: 6430432371d03f4eb24d54b5b17aaaa90c18307b 10.0.0.52:21000
+   slots:[256-511] (256 slots) master
+M: 41688676471548345a7d502bc8809240ad703715 10.0.0.52:21001
+   slots:[1280-1535] (256 slots) master
+M: eabab102c0f0d1afeb571d9f79279986b766b2bb 10.0.0.52:21002
+   slots:[2304-2559] (256 slots) master
+M: 46bd7bd362911ac5f17e08585d3ff6903fb004be 10.0.0.52:21003
+   slots:[3328-3583] (256 slots) master
+M: 113955a27fce62f5b42200ff924695d9119909a2 10.0.0.52:21004
+   slots:[4352-4607] (256 slots) master
+M: 35a1f47c3567949a11686846f1933526fed0c164 10.0.0.52:21005
+   slots:[5376-5631] (256 slots) master
+M: a2f8d2ddf66100e67fa7261ddf06ecbc0c022b01 10.0.0.52:21006
+   slots:[6400-6655] (256 slots) master
+M: ae1684b1a23290482319acdae80a100b1a102966 10.0.0.52:21007
+   slots:[7424-7679] (256 slots) master
+M: 353e1b9c68c5478e9c670bf43d5d7750b996201a 10.0.0.52:21008
+   slots:[8448-8703] (256 slots) master
+M: cc345470e10f29c2edb8ca8eb7b36db707f01f9c 10.0.0.52:21009
+   slots:[9472-9727] (256 slots) master
+M: 4cd3077a1c29fc726bbdf59190294bd27de15405 10.0.0.52:21010
+   slots:[10496-10751] (256 slots) master
+M: fbaad6ef3901ea0cbc880297d10d7f3036d53a51 10.0.0.52:21011
+   slots:[11520-11775] (256 slots) master
+M: 28908ff0c10fce0c30748cc7682513e0e3cafb12 10.0.0.52:21012
+   slots:[12544-12799] (256 slots) master
+M: 5fe562c58db77c26530d659d837575b3513f9638 10.0.0.52:21013
+   slots:[13568-13823] (256 slots) master
+M: 1a708cca03cf1b2068743b482a8a4cee3da8b228 10.0.0.52:21014
+   slots:[14592-14847] (256 slots) master
+M: 7690edbf9e9624eb81b99e4dfc5fe9465c635100 10.0.0.52:21015
+   slots:[15616-15871] (256 slots) master
+M: 2e65765137f299abe2cc2400ebe91ca4723f678b 10.0.0.53:21000
+   slots:[512-767] (256 slots) master
+M: 00eea661c86bff65f57328d4fad85248863aaf32 10.0.0.53:21001
+   slots:[1536-1791] (256 slots) master
+M: 7f8d4e9ddb9c53b05ec95ed39a65a6f0b066766e 10.0.0.53:21002
+   slots:[2560-2815] (256 slots) master
+M: 6312f601fea11384994f8d0d7f5c039f52274261 10.0.0.53:21003
+   slots:[3584-3839] (256 slots) master
+M: bdc8f5fc42b0cc121528ee5cb607f1cfdd478397 10.0.0.53:21004
+   slots:[4608-4863] (256 slots) master
+M: f177dc3ee1ce47954688ba5314b5ee7ed2266d6c 10.0.0.53:21005
+   slots:[5632-5887] (256 slots) master
+M: c4774682b245fca54017222c1f8c4d3bf675826c 10.0.0.53:21006
+   slots:[6656-6911] (256 slots) master
+M: 6ad9db10e42a868609b4fbe95f9be6f735867373 10.0.0.53:21007
+   slots:[7680-7935] (256 slots) master
+M: 1f01e4ca73632fb23891e4ce7c34d3dcb387632a 10.0.0.53:21008
+   slots:[8704-8959] (256 slots) master
+M: c4b629a67638906b3a1067ce00c7c88da6c9a09a 10.0.0.53:21009
+   slots:[9728-9983] (256 slots) master
+M: df4aef1efa5dff30da14be31f983e555ed6e2043 10.0.0.53:21010
+   slots:[10752-11007] (256 slots) master
+M: 3022ec54194de5e4e5d4e010fc3ab7d0f33afc9d 10.0.0.53:21011
+   slots:[11776-12031] (256 slots) master
+M: f18bd4ec3ac7e035dcb1234cbba5f8c75a8d7bdf 10.0.0.53:21012
+   slots:[12800-13055] (256 slots) master
+M: d0087693c1fcf2e3b9d190953383b86e6fbbe7b5 10.0.0.53:21013
+   slots:[13824-14079] (256 slots) master
+M: 952800e05ab912051f2da8b7cec91acf5026eead 10.0.0.53:21014
+   slots:[14848-15103] (256 slots) master
+M: 694683df774d76635fe73191fb3db65c41eb7aab 10.0.0.53:21015
+   slots:[15872-16127] (256 slots) master
+M: 883a3b83ced9d8519368e0767e410f464118a8f2 10.0.0.54:21000
+   slots:[768-1023] (256 slots) master
+M: ed2a3909ec15857e6d01983b313b5d71f6897529 10.0.0.54:21001
+   slots:[1792-2047] (256 slots) master
+M: ec3c9885f995a7908e030e39be1bee2f24535895 10.0.0.54:21002
+   slots:[2816-3071] (256 slots) master
+M: 108f7095cf495ac81405719ed929df7451d012c9 10.0.0.54:21003
+   slots:[3840-4095] (256 slots) master
+M: 60ad122e87b50b9574d3ef65f2929a8ae6fa2f82 10.0.0.54:21004
+   slots:[4864-5119] (256 slots) master
+M: ab5fa19b65c1f9261c1e681f268a1c91a4a616fb 10.0.0.54:21005
+   slots:[5888-6143] (256 slots) master
+M: 339069af61c7963a9a2bd1339b1d4022c5a8d3d4 10.0.0.54:21006
+   slots:[6912-7167] (256 slots) master
+M: 457e64b254aaec4fb17a5d1a814d24862badf394 10.0.0.54:21007
+   slots:[7936-8191] (256 slots) master
+M: 12bb88645668c8c052a318b39078273ffc788d08 10.0.0.54:21008
+   slots:[8960-9215] (256 slots) master
+M: 3c04e7333aa5d43f3cb65ef075fda7e5579d9bf6 10.0.0.54:21009
+   slots:[9984-10239] (256 slots) master
+M: 98681cd53fa11406744254c4533add028f05219e 10.0.0.54:21010
+   slots:[11008-11263] (256 slots) master
+M: 3b49f4207b951ce178302d291f94bb19717d31e3 10.0.0.54:21011
+   slots:[12032-12287] (256 slots) master
+M: f0dd9920f06dcfdfbd99af537808179979bd743a 10.0.0.54:21012
+   slots:[13056-13311] (256 slots) master
+M: ec2b637c3488ab98f80dfbae0e9027fa13ff163a 10.0.0.54:21013
+   slots:[14080-14335] (256 slots) master
+M: 79d225c32bc68068468fea50ecf0dd90ae23061d 10.0.0.54:21014
+   slots:[15104-15359] (256 slots) master
+M: 0b0de61921801219f7ab3648d5ecb9b054373b60 10.0.0.54:21015
+   slots:[16128-16383] (256 slots) master
+Can I set the above configuration? (type 'yes' to accept): [29;1m>>> Nodes configuration updated
+[0m[29;1m>>> Assign a different config epoch to each node
+[0m[29;1m>>> Sending CLUSTER MEET messages to join the cluster
+[0mWaiting for the cluster to join
+...............
+[29;1m>>> Performing Cluster Check (using node 10.0.0.51:21000)
+[0mM: 45c5ec35b52b9b5120dfb1775d9462c8a270b1de 10.0.0.51:21000
+   slots:[0-255] (256 slots) master
+M: 10e2f96903737cbe8e039a58eb143bcf653ef988 10.0.0.51:21006
+   slots:[6144-6399] (256 slots) master
+M: 736b8dbaf68c6b9d9826cb6ea993cbc65116a317 10.0.0.51:21004
+   slots:[4096-4351] (256 slots) master
+M: 883a3b83ced9d8519368e0767e410f464118a8f2 10.0.0.54:21000
+   slots:[768-1023] (256 slots) master
+M: 00eea661c86bff65f57328d4fad85248863aaf32 10.0.0.53:21001
+   slots:[1536-1791] (256 slots) master
+M: a4005fd512df77452a37d93e41edfc6f7fb03066 10.0.0.51:21008
+   slots:[8192-8447] (256 slots) master
+M: cc345470e10f29c2edb8ca8eb7b36db707f01f9c 10.0.0.52:21009
+   slots:[9472-9727] (256 slots) master
+M: 7690edbf9e9624eb81b99e4dfc5fe9465c635100 10.0.0.52:21015
+   slots:[15616-15871] (256 slots) master
+M: 339069af61c7963a9a2bd1339b1d4022c5a8d3d4 10.0.0.54:21006
+   slots:[6912-7167] (256 slots) master
+M: eabab102c0f0d1afeb571d9f79279986b766b2bb 10.0.0.52:21002
+   slots:[2304-2559] (256 slots) master
+M: fbaad6ef3901ea0cbc880297d10d7f3036d53a51 10.0.0.52:21011
+   slots:[11520-11775] (256 slots) master
+M: fcd01180ef66d7832b249decffe79a714a60ab67 10.0.0.51:21013
+   slots:[13312-13567] (256 slots) master
+M: 6430432371d03f4eb24d54b5b17aaaa90c18307b 10.0.0.52:21000
+   slots:[256-511] (256 slots) master
+M: 2e65765137f299abe2cc2400ebe91ca4723f678b 10.0.0.53:21000
+   slots:[512-767] (256 slots) master
+M: 5f62f5755fa0709c949a5178d3b9708d6ef3bbb3 10.0.0.51:21003
+   slots:[3072-3327] (256 slots) master
+M: 314228de2c11a1fbabd711b4539bc37df3610d8f 10.0.0.51:21005
+   slots:[5120-5375] (256 slots) master
+M: ec3c9885f995a7908e030e39be1bee2f24535895 10.0.0.54:21002
+   slots:[2816-3071] (256 slots) master
+M: 5fe562c58db77c26530d659d837575b3513f9638 10.0.0.52:21013
+   slots:[13568-13823] (256 slots) master
+M: 70576748385a922ead34998c5ffaffdcc54ce97e 10.0.0.51:21001
+   slots:[1024-1279] (256 slots) master
+M: 6f5afb32286877d33f6673cf7de1c8a57d81272a 10.0.0.51:21009
+   slots:[9216-9471] (256 slots) master
+M: 353e1b9c68c5478e9c670bf43d5d7750b996201a 10.0.0.52:21008
+   slots:[8448-8703] (256 slots) master
+M: 108f7095cf495ac81405719ed929df7451d012c9 10.0.0.54:21003
+   slots:[3840-4095] (256 slots) master
+M: 829a7982df3228258e57a6f0329c44310e99496f 10.0.0.51:21011
+   slots:[11264-11519] (256 slots) master
+M: 3022ec54194de5e4e5d4e010fc3ab7d0f33afc9d 10.0.0.53:21011
+   slots:[11776-12031] (256 slots) master
+M: d0087693c1fcf2e3b9d190953383b86e6fbbe7b5 10.0.0.53:21013
+   slots:[13824-14079] (256 slots) master
+M: f0dd9920f06dcfdfbd99af537808179979bd743a 10.0.0.54:21012
+   slots:[13056-13311] (256 slots) master
+M: f18bd4ec3ac7e035dcb1234cbba5f8c75a8d7bdf 10.0.0.53:21012
+   slots:[12800-13055] (256 slots) master
+M: 12bb88645668c8c052a318b39078273ffc788d08 10.0.0.54:21008
+   slots:[8960-9215] (256 slots) master
+M: df4aef1efa5dff30da14be31f983e555ed6e2043 10.0.0.53:21010
+   slots:[10752-11007] (256 slots) master
+M: 6ad9db10e42a868609b4fbe95f9be6f735867373 10.0.0.53:21007
+   slots:[7680-7935] (256 slots) master
+M: 7f8d4e9ddb9c53b05ec95ed39a65a6f0b066766e 10.0.0.53:21002
+   slots:[2560-2815] (256 slots) master
+M: d247c4fe0b14adbca2c008692f8dc4e5a862d153 10.0.0.51:21012
+   slots:[12288-12543] (256 slots) master
+M: 79d225c32bc68068468fea50ecf0dd90ae23061d 10.0.0.54:21014
+   slots:[15104-15359] (256 slots) master
+M: 41688676471548345a7d502bc8809240ad703715 10.0.0.52:21001
+   slots:[1280-1535] (256 slots) master
+M: 29e3095bd1e1aefb3be16cf5296702d342f6987b 10.0.0.51:21010
+   slots:[10240-10495] (256 slots) master
+M: 1f01e4ca73632fb23891e4ce7c34d3dcb387632a 10.0.0.53:21008
+   slots:[8704-8959] (256 slots) master
+M: bdc8f5fc42b0cc121528ee5cb607f1cfdd478397 10.0.0.53:21004
+   slots:[4608-4863] (256 slots) master
+M: ec2b637c3488ab98f80dfbae0e9027fa13ff163a 10.0.0.54:21013
+   slots:[14080-14335] (256 slots) master
+M: c4b629a67638906b3a1067ce00c7c88da6c9a09a 10.0.0.53:21009
+   slots:[9728-9983] (256 slots) master
+M: 837e59ced64faedd459fa3ddc809e76412824ac9 10.0.0.51:21015
+   slots:[15360-15615] (256 slots) master
+M: 4cd3077a1c29fc726bbdf59190294bd27de15405 10.0.0.52:21010
+   slots:[10496-10751] (256 slots) master
+M: ae1684b1a23290482319acdae80a100b1a102966 10.0.0.52:21007
+   slots:[7424-7679] (256 slots) master
+M: 46bd7bd362911ac5f17e08585d3ff6903fb004be 10.0.0.52:21003
+   slots:[3328-3583] (256 slots) master
+M: 952800e05ab912051f2da8b7cec91acf5026eead 10.0.0.53:21014
+   slots:[14848-15103] (256 slots) master
+M: f177dc3ee1ce47954688ba5314b5ee7ed2266d6c 10.0.0.53:21005
+   slots:[5632-5887] (256 slots) master
+M: ed2a3909ec15857e6d01983b313b5d71f6897529 10.0.0.54:21001
+   slots:[1792-2047] (256 slots) master
+M: 1a708cca03cf1b2068743b482a8a4cee3da8b228 10.0.0.52:21014
+   slots:[14592-14847] (256 slots) master
+M: af0a06a8e742716c9a9fc3dfbd0e0240cbf80193 10.0.0.51:21007
+   slots:[7168-7423] (256 slots) master
+M: fbd1dbb4b40a157aa8e74841bfcc2d16f3ee3380 10.0.0.51:21002
+   slots:[2048-2303] (256 slots) master
+M: 113955a27fce62f5b42200ff924695d9119909a2 10.0.0.52:21004
+   slots:[4352-4607] (256 slots) master
+M: 3c04e7333aa5d43f3cb65ef075fda7e5579d9bf6 10.0.0.54:21009
+   slots:[9984-10239] (256 slots) master
+M: c4774682b245fca54017222c1f8c4d3bf675826c 10.0.0.53:21006
+   slots:[6656-6911] (256 slots) master
+M: 60ad122e87b50b9574d3ef65f2929a8ae6fa2f82 10.0.0.54:21004
+   slots:[4864-5119] (256 slots) master
+M: a2f8d2ddf66100e67fa7261ddf06ecbc0c022b01 10.0.0.52:21006
+   slots:[6400-6655] (256 slots) master
+M: 3b49f4207b951ce178302d291f94bb19717d31e3 10.0.0.54:21011
+   slots:[12032-12287] (256 slots) master
+M: 98681cd53fa11406744254c4533add028f05219e 10.0.0.54:21010
+   slots:[11008-11263] (256 slots) master
+M: 457e64b254aaec4fb17a5d1a814d24862badf394 10.0.0.54:21007
+   slots:[7936-8191] (256 slots) master
+M: 0b0de61921801219f7ab3648d5ecb9b054373b60 10.0.0.54:21015
+   slots:[16128-16383] (256 slots) master
+M: 6312f601fea11384994f8d0d7f5c039f52274261 10.0.0.53:21003
+   slots:[3584-3839] (256 slots) master
+M: 28908ff0c10fce0c30748cc7682513e0e3cafb12 10.0.0.52:21012
+   slots:[12544-12799] (256 slots) master
+M: 35a1f47c3567949a11686846f1933526fed0c164 10.0.0.52:21005
+   slots:[5376-5631] (256 slots) master
+M: b650bd8d6fed15e0e379abcdb347000c74e0763f 10.0.0.51:21014
+   slots:[14336-14591] (256 slots) master
+M: ab5fa19b65c1f9261c1e681f268a1c91a4a616fb 10.0.0.54:21005
+   slots:[5888-6143] (256 slots) master
+M: 694683df774d76635fe73191fb3db65c41eb7aab 10.0.0.53:21015
+   slots:[15872-16127] (256 slots) master
+[32;1m[OK] All nodes agree about slots configuration.
+[0m[29;1m>>> Check for open slots...
+[0m[29;1m>>> Check slots coverage...
+[0m[32;1m[OK] All 16384 slots covered.
+[0mInstance num = 64
+Load Begin
+Load End
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+node1
+node2
+node3
+node4
+Machine = node1
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+>> Port 21012
+>> Port 21013
+>> Port 21014
+>> Port 21015
+>> Port 21016
+>> Port 21017
+>> Port 21018
+>> Port 21019
+Machine = node2
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+>> Port 21012
+>> Port 21013
+>> Port 21014
+>> Port 21015
+>> Port 21016
+>> Port 21017
+>> Port 21018
+>> Port 21019
+Machine = node3
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+>> Port 21012
+>> Port 21013
+>> Port 21014
+>> Port 21015
+>> Port 21016
+>> Port 21017
+>> Port 21018
+>> Port 21019
+Machine = node4
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+>> Port 21012
+>> Port 21013
+>> Port 21014
+>> Port 21015
+>> Port 21016
+>> Port 21017
+>> Port 21018
+>> Port 21019
+[29;1m>>> Performing hash slots allocation on 80 nodes...
+[0mMaster[0] -> Slots 0 - 204
+Master[1] -> Slots 205 - 409
+Master[2] -> Slots 410 - 613
+Master[3] -> Slots 614 - 818
+Master[4] -> Slots 819 - 1023
+Master[5] -> Slots 1024 - 1228
+Master[6] -> Slots 1229 - 1433
+Master[7] -> Slots 1434 - 1637
+Master[8] -> Slots 1638 - 1842
+Master[9] -> Slots 1843 - 2047
+Master[10] -> Slots 2048 - 2252
+Master[11] -> Slots 2253 - 2457
+Master[12] -> Slots 2458 - 2661
+Master[13] -> Slots 2662 - 2866
+Master[14] -> Slots 2867 - 3071
+Master[15] -> Slots 3072 - 3276
+Master[16] -> Slots 3277 - 3481
+Master[17] -> Slots 3482 - 3685
+Master[18] -> Slots 3686 - 3890
+Master[19] -> Slots 3891 - 4095
+Master[20] -> Slots 4096 - 4300
+Master[21] -> Slots 4301 - 4505
+Master[22] -> Slots 4506 - 4709
+Master[23] -> Slots 4710 - 4914
+Master[24] -> Slots 4915 - 5119
+Master[25] -> Slots 5120 - 5324
+Master[26] -> Slots 5325 - 5529
+Master[27] -> Slots 5530 - 5733
+Master[28] -> Slots 5734 - 5938
+Master[29] -> Slots 5939 - 6143
+Master[30] -> Slots 6144 - 6348
+Master[31] -> Slots 6349 - 6553
+Master[32] -> Slots 6554 - 6757
+Master[33] -> Slots 6758 - 6962
+Master[34] -> Slots 6963 - 7167
+Master[35] -> Slots 7168 - 7372
+Master[36] -> Slots 7373 - 7577
+Master[37] -> Slots 7578 - 7781
+Master[38] -> Slots 7782 - 7986
+Master[39] -> Slots 7987 - 8191
+Master[40] -> Slots 8192 - 8396
+Master[41] -> Slots 8397 - 8601
+Master[42] -> Slots 8602 - 8805
+Master[43] -> Slots 8806 - 9010
+Master[44] -> Slots 9011 - 9215
+Master[45] -> Slots 9216 - 9420
+Master[46] -> Slots 9421 - 9625
+Master[47] -> Slots 9626 - 9829
+Master[48] -> Slots 9830 - 10034
+Master[49] -> Slots 10035 - 10239
+Master[50] -> Slots 10240 - 10444
+Master[51] -> Slots 10445 - 10649
+Master[52] -> Slots 10650 - 10853
+Master[53] -> Slots 10854 - 11058
+Master[54] -> Slots 11059 - 11263
+Master[55] -> Slots 11264 - 11468
+Master[56] -> Slots 11469 - 11673
+Master[57] -> Slots 11674 - 11877
+Master[58] -> Slots 11878 - 12082
+Master[59] -> Slots 12083 - 12287
+Master[60] -> Slots 12288 - 12492
+Master[61] -> Slots 12493 - 12697
+Master[62] -> Slots 12698 - 12901
+Master[63] -> Slots 12902 - 13106
+Master[64] -> Slots 13107 - 13311
+Master[65] -> Slots 13312 - 13516
+Master[66] -> Slots 13517 - 13721
+Master[67] -> Slots 13722 - 13925
+Master[68] -> Slots 13926 - 14130
+Master[69] -> Slots 14131 - 14335
+Master[70] -> Slots 14336 - 14540
+Master[71] -> Slots 14541 - 14745
+Master[72] -> Slots 14746 - 14949
+Master[73] -> Slots 14950 - 15154
+Master[74] -> Slots 15155 - 15359
+Master[75] -> Slots 15360 - 15564
+Master[76] -> Slots 15565 - 15769
+Master[77] -> Slots 15770 - 15973
+Master[78] -> Slots 15974 - 16178
+Master[79] -> Slots 16179 - 16383
+M: e9acedf06e47481748db552c30f2efcb78588b66 10.0.0.51:21000
+   slots:[0-204] (205 slots) master
+M: 89ccc9dec524c7107914939ceb5101bd9cd6c57c 10.0.0.51:21001
+   slots:[819-1023] (205 slots) master
+M: 6f865dbdf354df6cb678d388e19ccd45ffd364dc 10.0.0.51:21002
+   slots:[1638-1842] (205 slots) master
+M: b5571257a23c346411ebfca1892a730b340db816 10.0.0.51:21003
+   slots:[2458-2661] (204 slots) master
+M: 916addfa2e9bf3d859c608ce766d317728b0f6cf 10.0.0.51:21004
+   slots:[3277-3481] (205 slots) master
+M: 92ae7a42a4f1b036a75c60365a767068e3e27053 10.0.0.51:21005
+   slots:[4096-4300] (205 slots) master
+M: 501c86ba820a0f0d7118da2db66be9d9ae37b203 10.0.0.51:21006
+   slots:[4915-5119] (205 slots) master
+M: 544b71dd2fb7758391f57ffbdf90e2f773ae2d6a 10.0.0.51:21007
+   slots:[5734-5938] (205 slots) master
+M: 89f859a9bc2ac13352547c3ebccc63a67e86cc7f 10.0.0.51:21008
+   slots:[6554-6757] (204 slots) master
+M: 4be3f3ee1e12f0be46cb7137cb9dd2233974b2b2 10.0.0.51:21009
+   slots:[7373-7577] (205 slots) master
+M: 9cd3e0d6f4376795d0ec2fe692ea31982a7a84f6 10.0.0.51:21010
+   slots:[8192-8396] (205 slots) master
+M: 08dd4591ce2b8209d077c1c4c3434cc6d7d20ba4 10.0.0.51:21011
+   slots:[9011-9215] (205 slots) master
+M: f8794ec427038ad6bc7648fb322676e8455b95a1 10.0.0.51:21012
+   slots:[9830-10034] (205 slots) master
+M: 7b1e40a00f352ddee82801d02b411a15ef1ed831 10.0.0.51:21013
+   slots:[10650-10853] (204 slots) master
+M: 1467821f06ca0ed6da70d79825dcf81462ceb8dc 10.0.0.51:21014
+   slots:[11469-11673] (205 slots) master
+M: 70a7aba4a5ffe635389b5cddd72ae2e6feb6a0cf 10.0.0.51:21015
+   slots:[12288-12492] (205 slots) master
+M: 6545125fd3572f15c9447bcd102604eaf9f7d5e7 10.0.0.51:21016
+   slots:[13107-13311] (205 slots) master
+M: 5a348363309c20c0827ab8a7a738e51c8d07c305 10.0.0.51:21017
+   slots:[13926-14130] (205 slots) master
+M: 547d602c57de82ecb03c19f9b63147f97d8646bb 10.0.0.51:21018
+   slots:[14746-14949] (204 slots) master
+M: a170b31ce793270aa95059bd8e1ca9324e0c6cf5 10.0.0.51:21019
+   slots:[15565-15769] (205 slots) master
+M: 926b161d910bb6040009603dad86ebabbd429c95 10.0.0.52:21000
+   slots:[205-409] (205 slots) master
+M: 966ae1f9db12a9ebcdfe6aef46c8728c49b0d009 10.0.0.52:21001
+   slots:[1024-1228] (205 slots) master
+M: 5c03eed68809295c7875280eadb6d34c3178aaa1 10.0.0.52:21002
+   slots:[1843-2047] (205 slots) master
+M: 1d022e8ea7d78570afc39611bf9cd63bbfce6b55 10.0.0.52:21003
+   slots:[2662-2866] (205 slots) master
+M: 4d884a42050060e9637971ff91354b5d011a9bef 10.0.0.52:21004
+   slots:[3482-3685] (204 slots) master
+M: a611a12c74062f9d599743cd10d0aed3d6e80b7e 10.0.0.52:21005
+   slots:[4301-4505] (205 slots) master
+M: ddf05fed7b677bae0915d5d48467bdd741258fa8 10.0.0.52:21006
+   slots:[5120-5324] (205 slots) master
+M: c70604f9f4998f46e1e786e7b5b4de0b24fb4429 10.0.0.52:21007
+   slots:[5939-6143] (205 slots) master
+M: 9c5fd7dda7c3f680450765e0ab96fd6763604880 10.0.0.52:21008
+   slots:[6758-6962] (205 slots) master
+M: c7b0ba2dff13cbabf1ee99a55079f28be290579a 10.0.0.52:21009
+   slots:[7578-7781] (204 slots) master
+M: 1ca1265c35d80112183f1b4debfa92ab0cc758b6 10.0.0.52:21010
+   slots:[8397-8601] (205 slots) master
+M: c2c91b260415eb2d5d990494b92dc1c3edfd7f33 10.0.0.52:21011
+   slots:[9216-9420] (205 slots) master
+M: ec076870f46bbae41ef55b8add17c837144ed97a 10.0.0.52:21012
+   slots:[10035-10239] (205 slots) master
+M: 52826ea065872e92fd4c4d2d099184105c6d01e5 10.0.0.52:21013
+   slots:[10854-11058] (205 slots) master
+M: 0226ade60537510d8260e48a6f815d506c5e5692 10.0.0.52:21014
+   slots:[11674-11877] (204 slots) master
+M: bbe698b5745a85ba209d479ba003d53b2afd923e 10.0.0.52:21015
+   slots:[12493-12697] (205 slots) master
+M: dcc57df2609272e52c2c20ee715e76c3b47e5599 10.0.0.52:21016
+   slots:[13312-13516] (205 slots) master
+M: 9d35f880febc2372ec526f20865d0c9b83008cf5 10.0.0.52:21017
+   slots:[14131-14335] (205 slots) master
+M: aa5a7eebd6a7b08e63c442f6a7e7eb6f29c73a9a 10.0.0.52:21018
+   slots:[14950-15154] (205 slots) master
+M: 50cf05a05c2d80a15c1a86b11f77d20743ed1da9 10.0.0.52:21019
+   slots:[15770-15973] (204 slots) master
+M: cbff670d4e31f7f1182c9996b256bece2956f42b 10.0.0.53:21000
+   slots:[410-613] (204 slots) master
+M: db41911fb86e1298365b5d3e3b438b002e62641e 10.0.0.53:21001
+   slots:[1229-1433] (205 slots) master
+M: 04f4242b49da475c79b6e435ee87ebce235698a4 10.0.0.53:21002
+   slots:[2048-2252] (205 slots) master
+M: df17a9384a790fa7478716cd3bc799d056c0d74f 10.0.0.53:21003
+   slots:[2867-3071] (205 slots) master
+M: eb4d3d83611baeaf990a864cb87848eefc744328 10.0.0.53:21004
+   slots:[3686-3890] (205 slots) master
+M: 4d6e2b502c63be43aa6f969b62b435d132e3684b 10.0.0.53:21005
+   slots:[4506-4709] (204 slots) master
+M: d7265bafadef00c10ac06f8e9979c22337f71990 10.0.0.53:21006
+   slots:[5325-5529] (205 slots) master
+M: 5eac92463618381d30e88076c7537924198fc9a7 10.0.0.53:21007
+   slots:[6144-6348] (205 slots) master
+M: e6eec0337ad9af85f397160a3bd6bcf82e0c5b6c 10.0.0.53:21008
+   slots:[6963-7167] (205 slots) master
+M: b44196453220d122f5024d745245265f6db0284d 10.0.0.53:21009
+   slots:[7782-7986] (205 slots) master
+M: 122c121f3fcbad1aca7bdba4d7ff7b81a81be2b6 10.0.0.53:21010
+   slots:[8602-8805] (204 slots) master
+M: e6f0c2fa2fda475d71622e5f1e691a9de1289c2c 10.0.0.53:21011
+   slots:[9421-9625] (205 slots) master
+M: d922c235ab8d5dbfcabc41d6027f95a95cfadd5d 10.0.0.53:21012
+   slots:[10240-10444] (205 slots) master
+M: 4f8b8b12981179b39417adaa532c0196a607262a 10.0.0.53:21013
+   slots:[11059-11263] (205 slots) master
+M: e808a03a391dfa15370defe17a72dad3a8ef23e2 10.0.0.53:21014
+   slots:[11878-12082] (205 slots) master
+M: e1373d00494509eb75f637bc66d42cb893e9df11 10.0.0.53:21015
+   slots:[12698-12901] (204 slots) master
+M: 29b67f37ebfdf29d0869faebf818868f099a76e0 10.0.0.53:21016
+   slots:[13517-13721] (205 slots) master
+M: 8adc46b01f72de81cc59d352d7da7a2ee0134149 10.0.0.53:21017
+   slots:[14336-14540] (205 slots) master
+M: 0ae939560247c448086f623460fe32ddfc65018b 10.0.0.53:21018
+   slots:[15155-15359] (205 slots) master
+M: 1a12eff082fb8d3cff18013bcefe0ce9f1f3b98c 10.0.0.53:21019
+   slots:[15974-16178] (205 slots) master
+M: 942e16dc45313f8b9be4f4ce10ce6f057b40cedb 10.0.0.54:21000
+   slots:[614-818] (205 slots) master
+M: 2b0794f6f8e9c4e2f0b9c97def6ff525d17c88bb 10.0.0.54:21001
+   slots:[1434-1637] (204 slots) master
+M: 970b8bf2271d937a7e481d8391baf2baf2b2b3bf 10.0.0.54:21002
+   slots:[2253-2457] (205 slots) master
+M: 4738dce2eb0bfd23b17463e8627b24ddabca644f 10.0.0.54:21003
+   slots:[3072-3276] (205 slots) master
+M: ba6c12ade2c3fe290054c34437c4d0a26ded4baa 10.0.0.54:21004
+   slots:[3891-4095] (205 slots) master
+M: ca93befb66a1c21f529c60eb287d3a6d78340e47 10.0.0.54:21005
+   slots:[4710-4914] (205 slots) master
+M: 8f2bcd36ced89dec6ce08af60e1276aa19801aba 10.0.0.54:21006
+   slots:[5530-5733] (204 slots) master
+M: 3cbd0976965a0729ebe7368b7e65c094cce0b5ee 10.0.0.54:21007
+   slots:[6349-6553] (205 slots) master
+M: 103514f355c6ce30ec07a95bb27c14448165a748 10.0.0.54:21008
+   slots:[7168-7372] (205 slots) master
+M: c70331ca484242e8b49972448497b8f70dc42e5c 10.0.0.54:21009
+   slots:[7987-8191] (205 slots) master
+M: a4f65b5a93380e7ea84c842e3bf5f0c730093cb5 10.0.0.54:21010
+   slots:[8806-9010] (205 slots) master
+M: cb01de4c1a9e02bed9b1e53d750e413aead80c1f 10.0.0.54:21011
+   slots:[9626-9829] (204 slots) master
+M: 818d641cfa844c5d92a9c22f00acc80b36bf50a4 10.0.0.54:21012
+   slots:[10445-10649] (205 slots) master
+M: 241d2647af46af92c68d0cdc184dd97142110720 10.0.0.54:21013
+   slots:[11264-11468] (205 slots) master
+M: ebb8e6d27aedd1d86299b04eab974682d794522b 10.0.0.54:21014
+   slots:[12083-12287] (205 slots) master
+M: e644ef9d5973043f9bbc5a2c4955912febc1bd96 10.0.0.54:21015
+   slots:[12902-13106] (205 slots) master
+M: 38bca51dc76107dd0577244776492b126acc7b23 10.0.0.54:21016
+   slots:[13722-13925] (204 slots) master
+M: 91f44b030b97c96fa85d9defdf06191197bce9d2 10.0.0.54:21017
+   slots:[14541-14745] (205 slots) master
+M: 299f24366300d53d75e9d7d22aa53870df54588c 10.0.0.54:21018
+   slots:[15360-15564] (205 slots) master
+M: bcb2632c2832e866e72346a5674f9c5e3efc6c93 10.0.0.54:21019
+   slots:[16179-16383] (205 slots) master
+Can I set the above configuration? (type 'yes' to accept): [29;1m>>> Nodes configuration updated
+[0m[29;1m>>> Assign a different config epoch to each node
+[0m[29;1m>>> Sending CLUSTER MEET messages to join the cluster
+[0mWaiting for the cluster to join
+...............
+[29;1m>>> Performing Cluster Check (using node 10.0.0.51:21000)
+[0mM: e9acedf06e47481748db552c30f2efcb78588b66 10.0.0.51:21000
+   slots:[0-204] (205 slots) master
+M: c2c91b260415eb2d5d990494b92dc1c3edfd7f33 10.0.0.52:21011
+   slots:[9216-9420] (205 slots) master
+M: f8794ec427038ad6bc7648fb322676e8455b95a1 10.0.0.51:21012
+   slots:[9830-10034] (205 slots) master
+M: 9c5fd7dda7c3f680450765e0ab96fd6763604880 10.0.0.52:21008
+   slots:[6758-6962] (205 slots) master
+M: ec076870f46bbae41ef55b8add17c837144ed97a 10.0.0.52:21012
+   slots:[10035-10239] (205 slots) master
+M: a170b31ce793270aa95059bd8e1ca9324e0c6cf5 10.0.0.51:21019
+   slots:[15565-15769] (205 slots) master
+M: 501c86ba820a0f0d7118da2db66be9d9ae37b203 10.0.0.51:21006
+   slots:[4915-5119] (205 slots) master
+M: 1d022e8ea7d78570afc39611bf9cd63bbfce6b55 10.0.0.52:21003
+   slots:[2662-2866] (205 slots) master
+M: 818d641cfa844c5d92a9c22f00acc80b36bf50a4 10.0.0.54:21012
+   slots:[10445-10649] (205 slots) master
+M: 916addfa2e9bf3d859c608ce766d317728b0f6cf 10.0.0.51:21004
+   slots:[3277-3481] (205 slots) master
+M: 04f4242b49da475c79b6e435ee87ebce235698a4 10.0.0.53:21002
+   slots:[2048-2252] (205 slots) master
+M: b5571257a23c346411ebfca1892a730b340db816 10.0.0.51:21003
+   slots:[2458-2661] (204 slots) master
+M: 1a12eff082fb8d3cff18013bcefe0ce9f1f3b98c 10.0.0.53:21019
+   slots:[15974-16178] (205 slots) master
+M: 9cd3e0d6f4376795d0ec2fe692ea31982a7a84f6 10.0.0.51:21010
+   slots:[8192-8396] (205 slots) master
+M: 50cf05a05c2d80a15c1a86b11f77d20743ed1da9 10.0.0.52:21019
+   slots:[15770-15973] (204 slots) master
+M: 241d2647af46af92c68d0cdc184dd97142110720 10.0.0.54:21013
+   slots:[11264-11468] (205 slots) master
+M: d922c235ab8d5dbfcabc41d6027f95a95cfadd5d 10.0.0.53:21012
+   slots:[10240-10444] (205 slots) master
+M: e1373d00494509eb75f637bc66d42cb893e9df11 10.0.0.53:21015
+   slots:[12698-12901] (204 slots) master
+M: ca93befb66a1c21f529c60eb287d3a6d78340e47 10.0.0.54:21005
+   slots:[4710-4914] (205 slots) master
+M: 89f859a9bc2ac13352547c3ebccc63a67e86cc7f 10.0.0.51:21008
+   slots:[6554-6757] (204 slots) master
+M: db41911fb86e1298365b5d3e3b438b002e62641e 10.0.0.53:21001
+   slots:[1229-1433] (205 slots) master
+M: 9d35f880febc2372ec526f20865d0c9b83008cf5 10.0.0.52:21017
+   slots:[14131-14335] (205 slots) master
+M: 5c03eed68809295c7875280eadb6d34c3178aaa1 10.0.0.52:21002
+   slots:[1843-2047] (205 slots) master
+M: eb4d3d83611baeaf990a864cb87848eefc744328 10.0.0.53:21004
+   slots:[3686-3890] (205 slots) master
+M: 0ae939560247c448086f623460fe32ddfc65018b 10.0.0.53:21018
+   slots:[15155-15359] (205 slots) master
+M: 5eac92463618381d30e88076c7537924198fc9a7 10.0.0.53:21007
+   slots:[6144-6348] (205 slots) master
+M: 70a7aba4a5ffe635389b5cddd72ae2e6feb6a0cf 10.0.0.51:21015
+   slots:[12288-12492] (205 slots) master
+M: aa5a7eebd6a7b08e63c442f6a7e7eb6f29c73a9a 10.0.0.52:21018
+   slots:[14950-15154] (205 slots) master
+M: ddf05fed7b677bae0915d5d48467bdd741258fa8 10.0.0.52:21006
+   slots:[5120-5324] (205 slots) master
+M: 08dd4591ce2b8209d077c1c4c3434cc6d7d20ba4 10.0.0.51:21011
+   slots:[9011-9215] (205 slots) master
+M: 966ae1f9db12a9ebcdfe6aef46c8728c49b0d009 10.0.0.52:21001
+   slots:[1024-1228] (205 slots) master
+M: 4d6e2b502c63be43aa6f969b62b435d132e3684b 10.0.0.53:21005
+   slots:[4506-4709] (204 slots) master
+M: 4f8b8b12981179b39417adaa532c0196a607262a 10.0.0.53:21013
+   slots:[11059-11263] (205 slots) master
+M: 122c121f3fcbad1aca7bdba4d7ff7b81a81be2b6 10.0.0.53:21010
+   slots:[8602-8805] (204 slots) master
+M: cbff670d4e31f7f1182c9996b256bece2956f42b 10.0.0.53:21000
+   slots:[410-613] (204 slots) master
+M: 52826ea065872e92fd4c4d2d099184105c6d01e5 10.0.0.52:21013
+   slots:[10854-11058] (205 slots) master
+M: 29b67f37ebfdf29d0869faebf818868f099a76e0 10.0.0.53:21016
+   slots:[13517-13721] (205 slots) master
+M: 547d602c57de82ecb03c19f9b63147f97d8646bb 10.0.0.51:21018
+   slots:[14746-14949] (204 slots) master
+M: 299f24366300d53d75e9d7d22aa53870df54588c 10.0.0.54:21018
+   slots:[15360-15564] (205 slots) master
+M: 926b161d910bb6040009603dad86ebabbd429c95 10.0.0.52:21000
+   slots:[205-409] (205 slots) master
+M: 8f2bcd36ced89dec6ce08af60e1276aa19801aba 10.0.0.54:21006
+   slots:[5530-5733] (204 slots) master
+M: 7b1e40a00f352ddee82801d02b411a15ef1ed831 10.0.0.51:21013
+   slots:[10650-10853] (204 slots) master
+M: 5a348363309c20c0827ab8a7a738e51c8d07c305 10.0.0.51:21017
+   slots:[13926-14130] (205 slots) master
+M: e808a03a391dfa15370defe17a72dad3a8ef23e2 10.0.0.53:21014
+   slots:[11878-12082] (205 slots) master
+M: cb01de4c1a9e02bed9b1e53d750e413aead80c1f 10.0.0.54:21011
+   slots:[9626-9829] (204 slots) master
+M: a611a12c74062f9d599743cd10d0aed3d6e80b7e 10.0.0.52:21005
+   slots:[4301-4505] (205 slots) master
+M: bbe698b5745a85ba209d479ba003d53b2afd923e 10.0.0.52:21015
+   slots:[12493-12697] (205 slots) master
+M: 3cbd0976965a0729ebe7368b7e65c094cce0b5ee 10.0.0.54:21007
+   slots:[6349-6553] (205 slots) master
+M: 2b0794f6f8e9c4e2f0b9c97def6ff525d17c88bb 10.0.0.54:21001
+   slots:[1434-1637] (204 slots) master
+M: 103514f355c6ce30ec07a95bb27c14448165a748 10.0.0.54:21008
+   slots:[7168-7372] (205 slots) master
+M: 544b71dd2fb7758391f57ffbdf90e2f773ae2d6a 10.0.0.51:21007
+   slots:[5734-5938] (205 slots) master
+M: 6545125fd3572f15c9447bcd102604eaf9f7d5e7 10.0.0.51:21016
+   slots:[13107-13311] (205 slots) master
+M: 38bca51dc76107dd0577244776492b126acc7b23 10.0.0.54:21016
+   slots:[13722-13925] (204 slots) master
+M: bcb2632c2832e866e72346a5674f9c5e3efc6c93 10.0.0.54:21019
+   slots:[16179-16383] (205 slots) master
+M: c70331ca484242e8b49972448497b8f70dc42e5c 10.0.0.54:21009
+   slots:[7987-8191] (205 slots) master
+M: 89ccc9dec524c7107914939ceb5101bd9cd6c57c 10.0.0.51:21001
+   slots:[819-1023] (205 slots) master
+M: 1ca1265c35d80112183f1b4debfa92ab0cc758b6 10.0.0.52:21010
+   slots:[8397-8601] (205 slots) master
+M: 4d884a42050060e9637971ff91354b5d011a9bef 10.0.0.52:21004
+   slots:[3482-3685] (204 slots) master
+M: 4be3f3ee1e12f0be46cb7137cb9dd2233974b2b2 10.0.0.51:21009
+   slots:[7373-7577] (205 slots) master
+M: 8adc46b01f72de81cc59d352d7da7a2ee0134149 10.0.0.53:21017
+   slots:[14336-14540] (205 slots) master
+M: 0226ade60537510d8260e48a6f815d506c5e5692 10.0.0.52:21014
+   slots:[11674-11877] (204 slots) master
+M: 942e16dc45313f8b9be4f4ce10ce6f057b40cedb 10.0.0.54:21000
+   slots:[614-818] (205 slots) master
+M: df17a9384a790fa7478716cd3bc799d056c0d74f 10.0.0.53:21003
+   slots:[2867-3071] (205 slots) master
+M: 91f44b030b97c96fa85d9defdf06191197bce9d2 10.0.0.54:21017
+   slots:[14541-14745] (205 slots) master
+M: e6eec0337ad9af85f397160a3bd6bcf82e0c5b6c 10.0.0.53:21008
+   slots:[6963-7167] (205 slots) master
+M: e644ef9d5973043f9bbc5a2c4955912febc1bd96 10.0.0.54:21015
+   slots:[12902-13106] (205 slots) master
+M: 6f865dbdf354df6cb678d388e19ccd45ffd364dc 10.0.0.51:21002
+   slots:[1638-1842] (205 slots) master
+M: 1467821f06ca0ed6da70d79825dcf81462ceb8dc 10.0.0.51:21014
+   slots:[11469-11673] (205 slots) master
+M: c70604f9f4998f46e1e786e7b5b4de0b24fb4429 10.0.0.52:21007
+   slots:[5939-6143] (205 slots) master
+M: c7b0ba2dff13cbabf1ee99a55079f28be290579a 10.0.0.52:21009
+   slots:[7578-7781] (204 slots) master
+M: a4f65b5a93380e7ea84c842e3bf5f0c730093cb5 10.0.0.54:21010
+   slots:[8806-9010] (205 slots) master
+M: 970b8bf2271d937a7e481d8391baf2baf2b2b3bf 10.0.0.54:21002
+   slots:[2253-2457] (205 slots) master
+M: ba6c12ade2c3fe290054c34437c4d0a26ded4baa 10.0.0.54:21004
+   slots:[3891-4095] (205 slots) master
+M: 92ae7a42a4f1b036a75c60365a767068e3e27053 10.0.0.51:21005
+   slots:[4096-4300] (205 slots) master
+M: dcc57df2609272e52c2c20ee715e76c3b47e5599 10.0.0.52:21016
+   slots:[13312-13516] (205 slots) master
+M: 4738dce2eb0bfd23b17463e8627b24ddabca644f 10.0.0.54:21003
+   slots:[3072-3276] (205 slots) master
+M: e6f0c2fa2fda475d71622e5f1e691a9de1289c2c 10.0.0.53:21011
+   slots:[9421-9625] (205 slots) master
+M: ebb8e6d27aedd1d86299b04eab974682d794522b 10.0.0.54:21014
+   slots:[12083-12287] (205 slots) master
+M: d7265bafadef00c10ac06f8e9979c22337f71990 10.0.0.53:21006
+   slots:[5325-5529] (205 slots) master
+M: b44196453220d122f5024d745245265f6db0284d 10.0.0.53:21009
+   slots:[7782-7986] (205 slots) master
+[32;1m[OK] All nodes agree about slots configuration.
+[0m[29;1m>>> Check for open slots...
+[0m[29;1m>>> Check slots coverage...
+[0m[32;1m[OK] All 16384 slots covered.
+[0mInstance num = 80
+Load Begin
+Load End
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+node1
+node2
+node3
+node4
+Machine = node1
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+>> Port 21012
+>> Port 21013
+>> Port 21014
+>> Port 21015
+>> Port 21016
+>> Port 21017
+>> Port 21018
+>> Port 21019
+>> Port 21020
+>> Port 21021
+>> Port 21022
+>> Port 21023
+Machine = node2
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+>> Port 21012
+>> Port 21013
+>> Port 21014
+>> Port 21015
+>> Port 21016
+>> Port 21017
+>> Port 21018
+>> Port 21019
+>> Port 21020
+>> Port 21021
+>> Port 21022
+>> Port 21023
+Machine = node3
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+>> Port 21012
+>> Port 21013
+>> Port 21014
+>> Port 21015
+>> Port 21016
+>> Port 21017
+>> Port 21018
+>> Port 21019
+>> Port 21020
+>> Port 21021
+>> Port 21022
+>> Port 21023
+Machine = node4
+>> Port 21000
+>> Port 21001
+>> Port 21002
+>> Port 21003
+>> Port 21004
+>> Port 21005
+>> Port 21006
+>> Port 21007
+>> Port 21008
+>> Port 21009
+>> Port 21010
+>> Port 21011
+>> Port 21012
+>> Port 21013
+>> Port 21014
+>> Port 21015
+>> Port 21016
+>> Port 21017
+>> Port 21018
+>> Port 21019
+>> Port 21020
+>> Port 21021
+>> Port 21022
+>> Port 21023
+[29;1m>>> Performing hash slots allocation on 96 nodes...
+[0mMaster[0] -> Slots 0 - 170
+Master[1] -> Slots 171 - 340
+Master[2] -> Slots 341 - 511
+Master[3] -> Slots 512 - 682
+Master[4] -> Slots 683 - 852
+Master[5] -> Slots 853 - 1023
+Master[6] -> Slots 1024 - 1194
+Master[7] -> Slots 1195 - 1364
+Master[8] -> Slots 1365 - 1535
+Master[9] -> Slots 1536 - 1706
+Master[10] -> Slots 1707 - 1876
+Master[11] -> Slots 1877 - 2047
+Master[12] -> Slots 2048 - 2218
+Master[13] -> Slots 2219 - 2388
+Master[14] -> Slots 2389 - 2559
+Master[15] -> Slots 2560 - 2730
+Master[16] -> Slots 2731 - 2900
+Master[17] -> Slots 2901 - 3071
+Master[18] -> Slots 3072 - 3242
+Master[19] -> Slots 3243 - 3412
+Master[20] -> Slots 3413 - 3583
+Master[21] -> Slots 3584 - 3754
+Master[22] -> Slots 3755 - 3924
+Master[23] -> Slots 3925 - 4095
+Master[24] -> Slots 4096 - 4266
+Master[25] -> Slots 4267 - 4436
+Master[26] -> Slots 4437 - 4607
+Master[27] -> Slots 4608 - 4778
+Master[28] -> Slots 4779 - 4948
+Master[29] -> Slots 4949 - 5119
+Master[30] -> Slots 5120 - 5290
+Master[31] -> Slots 5291 - 5460
+Master[32] -> Slots 5461 - 5631
+Master[33] -> Slots 5632 - 5802
+Master[34] -> Slots 5803 - 5972
+Master[35] -> Slots 5973 - 6143
+Master[36] -> Slots 6144 - 6314
+Master[37] -> Slots 6315 - 6484
+Master[38] -> Slots 6485 - 6655
+Master[39] -> Slots 6656 - 6826
+Master[40] -> Slots 6827 - 6996
+Master[41] -> Slots 6997 - 7167
+Master[42] -> Slots 7168 - 7338
+Master[43] -> Slots 7339 - 7508
+Master[44] -> Slots 7509 - 7679
+Master[45] -> Slots 7680 - 7850
+Master[46] -> Slots 7851 - 8020
+Master[47] -> Slots 8021 - 8191
+Master[48] -> Slots 8192 - 8362
+Master[49] -> Slots 8363 - 8532
+Master[50] -> Slots 8533 - 8703
+Master[51] -> Slots 8704 - 8874
+Master[52] -> Slots 8875 - 9044
+Master[53] -> Slots 9045 - 9215
+Master[54] -> Slots 9216 - 9386
+Master[55] -> Slots 9387 - 9556
+Master[56] -> Slots 9557 - 9727
+Master[57] -> Slots 9728 - 9898
+Master[58] -> Slots 9899 - 10068
+Master[59] -> Slots 10069 - 10239
+Master[60] -> Slots 10240 - 10410
+Master[61] -> Slots 10411 - 10580
+Master[62] -> Slots 10581 - 10751
+Master[63] -> Slots 10752 - 10922
+Master[64] -> Slots 10923 - 11092
+Master[65] -> Slots 11093 - 11263
+Master[66] -> Slots 11264 - 11434
+Master[67] -> Slots 11435 - 11604
+Master[68] -> Slots 11605 - 11775
+Master[69] -> Slots 11776 - 11946
+Master[70] -> Slots 11947 - 12116
+Master[71] -> Slots 12117 - 12287
+Master[72] -> Slots 12288 - 12458
+Master[73] -> Slots 12459 - 12628
+Master[74] -> Slots 12629 - 12799
+Master[75] -> Slots 12800 - 12970
+Master[76] -> Slots 12971 - 13140
+Master[77] -> Slots 13141 - 13311
+Master[78] -> Slots 13312 - 13482
+Master[79] -> Slots 13483 - 13652
+Master[80] -> Slots 13653 - 13823
+Master[81] -> Slots 13824 - 13994
+Master[82] -> Slots 13995 - 14164
+Master[83] -> Slots 14165 - 14335
+Master[84] -> Slots 14336 - 14506
+Master[85] -> Slots 14507 - 14676
+Master[86] -> Slots 14677 - 14847
+Master[87] -> Slots 14848 - 15018
+Master[88] -> Slots 15019 - 15188
+Master[89] -> Slots 15189 - 15359
+Master[90] -> Slots 15360 - 15530
+Master[91] -> Slots 15531 - 15700
+Master[92] -> Slots 15701 - 15871
+Master[93] -> Slots 15872 - 16042
+Master[94] -> Slots 16043 - 16212
+Master[95] -> Slots 16213 - 16383
+M: 49134f26146d20ec02b20967881cb8dd702f5182 10.0.0.51:21000
+   slots:[0-170] (171 slots) master
+M: 5897d3cd9a9baa5d5b1520bc6bae9f2d60c887f5 10.0.0.51:21001
+   slots:[683-852] (170 slots) master
+M: a9bf57a480714fd24719481cd32a1a0fe1376940 10.0.0.51:21002
+   slots:[1365-1535] (171 slots) master
+M: 9c69d5c65bca94a2ce66a93309baad3c0d8003b6 10.0.0.51:21003
+   slots:[2048-2218] (171 slots) master
+M: df90ba3f55966d7acafacb4612c6acb06f07cdb6 10.0.0.51:21004
+   slots:[2731-2900] (170 slots) master
+M: 695a8c774b87e2f1c502a610b3c97b6da759433a 10.0.0.51:21005
+   slots:[3413-3583] (171 slots) master
+M: baafb3b665e9fff5bfecec711bf380e64e9d99db 10.0.0.51:21006
+   slots:[4096-4266] (171 slots) master
+M: 3a5dac00020b9445c0688c7d17545ff2cebf0d18 10.0.0.51:21007
+   slots:[4779-4948] (170 slots) master
+M: 8b5dbe0e746ea5c2b1601e27c29a7175734b6f75 10.0.0.51:21008
+   slots:[5461-5631] (171 slots) master
+M: f6c20046521a9a0ef3cdab0598f779ea5637d4e9 10.0.0.51:21009
+   slots:[6144-6314] (171 slots) master
+M: 82800da9fc23908efb6f28ad2449538d92c5a6ef 10.0.0.51:21010
+   slots:[6827-6996] (170 slots) master
+M: b149f1485bc8c28bcb2fec4a11e89dabe4fc1037 10.0.0.51:21011
+   slots:[7509-7679] (171 slots) master
+M: 6549f856d5958a636b936d398c6b8784d6b2f36c 10.0.0.51:21012
+   slots:[8192-8362] (171 slots) master
+M: 309dc4c78ecd89d0d13e86276810fdba9d786b1e 10.0.0.51:21013
+   slots:[8875-9044] (170 slots) master
+M: ec6a9d2489ec583d351e2eadab451dcca1c4100d 10.0.0.51:21014
+   slots:[9557-9727] (171 slots) master
+M: 1fef4c0bdb9f89c7091c68d322649529b263b1f6 10.0.0.51:21015
+   slots:[10240-10410] (171 slots) master
+M: ade9c4c7bc25ca953e883a863834f5bf8658f8d6 10.0.0.51:21016
+   slots:[10923-11092] (170 slots) master
+M: d2c376737c2a8157c71a4e8956be3f06a85f1ade 10.0.0.51:21017
+   slots:[11605-11775] (171 slots) master
+M: 4a3d2e19e2163f25991b22de1aebad6d4e247ab4 10.0.0.51:21018
+   slots:[12288-12458] (171 slots) master
+M: c030bc8036a4e656f409f3fa9e59303175cf1e30 10.0.0.51:21019
+   slots:[12971-13140] (170 slots) master
+M: afc75cdfbf6e21268f9f7ad2892552abb6a8ee33 10.0.0.51:21020
+   slots:[13653-13823] (171 slots) master
+M: a0847bd74985a0f5928cd30e6a30fbb2c3d5591a 10.0.0.51:21021
+   slots:[14336-14506] (171 slots) master
+M: 1b3d48afed410728e6abea7b762826c250b51634 10.0.0.51:21022
+   slots:[15019-15188] (170 slots) master
+M: 357ab7e1fb3505ce6ceaeb0c0377f748fcfd9dac 10.0.0.51:21023
+   slots:[15701-15871] (171 slots) master
+M: 6215a1fc1f39ebb0204473bcca27507d5194824b 10.0.0.52:21000
+   slots:[171-340] (170 slots) master
+M: f40406352f6debb3394c2316cc3afd87bd19e307 10.0.0.52:21001
+   slots:[853-1023] (171 slots) master
+M: cc71b82967fab8aba3bafa21e64f1e18e1a47c55 10.0.0.52:21002
+   slots:[1536-1706] (171 slots) master
+M: 84704adaf3248195ce11befd88950b5451f5687b 10.0.0.52:21003
+   slots:[2219-2388] (170 slots) master
+M: 64dd993326d025698ea6634fd81f7e0878480f35 10.0.0.52:21004
+   slots:[2901-3071] (171 slots) master
+M: 6ca495a2b1c03729b8d0c72bc463327679cab2ba 10.0.0.52:21005
+   slots:[3584-3754] (171 slots) master
+M: 8c2b9aa688ff39313d6cab96b80135d241b4650b 10.0.0.52:21006
+   slots:[4267-4436] (170 slots) master
+M: a98e97bfa76fc49bdca0502966143f8df9385bff 10.0.0.52:21007
+   slots:[4949-5119] (171 slots) master
+M: c77a43c9fe83b48013580b34aa046e275f3c9c5c 10.0.0.52:21008
+   slots:[5632-5802] (171 slots) master
+M: b62268b8bcf9a9029e42741c49b270a7c95af085 10.0.0.52:21009
+   slots:[6315-6484] (170 slots) master
+M: d29f1ed67f9bc5070a3efc07bef8beb7c892c411 10.0.0.52:21010
+   slots:[6997-7167] (171 slots) master
+M: 8b1615ed52b24a47b1212d63ca3ea63d3bf05304 10.0.0.52:21011
+   slots:[7680-7850] (171 slots) master
+M: 656324e6e2996f15ce548f943c54a87e32fc2681 10.0.0.52:21012
+   slots:[8363-8532] (170 slots) master
+M: 829ce7854906fbcd409834ebd0b9aae2ede131a7 10.0.0.52:21013
+   slots:[9045-9215] (171 slots) master
+M: 1167840c9bd5b446898eff72c6557ad25ff2d927 10.0.0.52:21014
+   slots:[9728-9898] (171 slots) master
+M: 49f1a6f4af75638e6d47d0249d37a07a1ca12791 10.0.0.52:21015
+   slots:[10411-10580] (170 slots) master
+M: b773a790d36f25b4b3f77deb9046748e874a9f92 10.0.0.52:21016
+   slots:[11093-11263] (171 slots) master
+M: 1dbab213d5ad81c735e919cbd0b3335ef4514246 10.0.0.52:21017
+   slots:[11776-11946] (171 slots) master
+M: cf50aa408930a7b3ca8938c95a466355a72629ca 10.0.0.52:21018
+   slots:[12459-12628] (170 slots) master
+M: c311de0942aafe1682944b6ecc592a7eace16dd6 10.0.0.52:21019
+   slots:[13141-13311] (171 slots) master
+M: 5c47f80c06e41d33c5d91408626348a368e46e40 10.0.0.52:21020
+   slots:[13824-13994] (171 slots) master
+M: c1db014aef46300ff74c5fafb2bf7e04197c631a 10.0.0.52:21021
+   slots:[14507-14676] (170 slots) master
+M: 7e27e0aa7897f40a151fc3e8bc57007bac00e8b1 10.0.0.52:21022
+   slots:[15189-15359] (171 slots) master
+M: 9415811f9f05b846f799ae51d5c652fccc030b19 10.0.0.52:21023
+   slots:[15872-16042] (171 slots) master
+M: 5c2bf4802a31dfb71e8cb070ccbbe1a9cf04e159 10.0.0.53:21000
+   slots:[341-511] (171 slots) master
+M: 774fa44fc11e60ad2da20db26b6f9e9742ab6108 10.0.0.53:21001
+   slots:[1024-1194] (171 slots) master
+M: 1daa20cc658b4f7ab57f94b0cbfad669c490d22a 10.0.0.53:21002
+   slots:[1707-1876] (170 slots) master
+M: a411c8813fa544f4d8eb0e598743e78d3973c3a1 10.0.0.53:21003
+   slots:[2389-2559] (171 slots) master
+M: 17fe1f5ffcdf51fe0e33e319364128c7b7d5f6db 10.0.0.53:21004
+   slots:[3072-3242] (171 slots) master
+M: 5c9190a3e8d415656019d0403c97843598f470d7 10.0.0.53:21005
+   slots:[3755-3924] (170 slots) master
+M: 7155d8760306071803f69312a1e02176412abf00 10.0.0.53:21006
+   slots:[4437-4607] (171 slots) master
+M: 7b3cd09c224a3d99337ecaf70589048d14623e55 10.0.0.53:21007
+   slots:[5120-5290] (171 slots) master
+M: 21529aefc00000946bec12aa3bc9b57981ddb51a 10.0.0.53:21008
+   slots:[5803-5972] (170 slots) master
+M: 033f7920fb230d6e6f2ef32e2fdf7aa1bf155a85 10.0.0.53:21009
+   slots:[6485-6655] (171 slots) master
+M: c801b1701747b84d5d820b67807fe95ad81b4e5a 10.0.0.53:21010
+   slots:[7168-7338] (171 slots) master
+M: 35a8afbdb8da49232591724d0097a0c82e87ac2c 10.0.0.53:21011
+   slots:[7851-8020] (170 slots) master
+M: 835b0ed0bdd44d3b3e6ca5687cc7fbe7d3b8d640 10.0.0.53:21012
+   slots:[8533-8703] (171 slots) master
+M: 6b0ef4da9162221201602a4a4676d9f969dcacc9 10.0.0.53:21013
+   slots:[9216-9386] (171 slots) master
+M: f5ae30319726ab8939000d9d675cadf451ebbb39 10.0.0.53:21014
+   slots:[9899-10068] (170 slots) master
+M: 5ebac809be0924f357ace3fe3386b9ab53a2f84c 10.0.0.53:21015
+   slots:[10581-10751] (171 slots) master
+M: 53a765aca58d554b24cf07c6a7bcb5b733014270 10.0.0.53:21016
+   slots:[11264-11434] (171 slots) master
+M: d2098f1f420c3e0f5794cecadcf5f9ba81cfcfad 10.0.0.53:21017
+   slots:[11947-12116] (170 slots) master
+M: 8c10355e8801de04cc8017183f846aa714c0d028 10.0.0.53:21018
+   slots:[12629-12799] (171 slots) master
+M: 4eef1a83b09a503e2bc42d166934609d42116cbf 10.0.0.53:21019
+   slots:[13312-13482] (171 slots) master
+M: a41c56884965aa6773492c633c3d1360b4396a0b 10.0.0.53:21020
+   slots:[13995-14164] (170 slots) master
+M: deb1b3450285895d39917b58ede1b28fd4b509ed 10.0.0.53:21021
+   slots:[14677-14847] (171 slots) master
+M: e488b6cd97ba795d606929e94f4a3295335f55bf 10.0.0.53:21022
+   slots:[15360-15530] (171 slots) master
+M: 83f7724f2ae383a545a09bd269f9ef9b080ae9a1 10.0.0.53:21023
+   slots:[16043-16212] (170 slots) master
+M: 1cc9dbf4792b5754f906d46f47bdf7a6a6cc4f8c 10.0.0.54:21000
+   slots:[512-682] (171 slots) master
+M: 8abec752525863480f7ad52b612acc72713a7bbc 10.0.0.54:21001
+   slots:[1195-1364] (170 slots) master
+M: 4e7979430ac8c44f3c4360a5029ebb84c8cf8701 10.0.0.54:21002
+   slots:[1877-2047] (171 slots) master
+M: 91e36bb90a31f403c2fc0f8f17d0e3ddec89813d 10.0.0.54:21003
+   slots:[2560-2730] (171 slots) master
+M: fe41fc599b9c69ffb2637ed4f5905f2df0c1ddaf 10.0.0.54:21004
+   slots:[3243-3412] (170 slots) master
+M: 7427d603fe60e3b8f340fd741c194ad102892990 10.0.0.54:21005
+   slots:[3925-4095] (171 slots) master
+M: 24bbdf61c6c8f705255a105992de5def84de18ba 10.0.0.54:21006
+   slots:[4608-4778] (171 slots) master
+M: 51a8b30c8164866e6d2c2e9640ed06658f6a7458 10.0.0.54:21007
+   slots:[5291-5460] (170 slots) master
+M: 089a18c4da206b2ccf17e2af76a6a98a1fc78fd7 10.0.0.54:21008
+   slots:[5973-6143] (171 slots) master
+M: 100c027684746cae995fa528d29046d8cce8d188 10.0.0.54:21009
+   slots:[6656-6826] (171 slots) master
+M: c8827ea33e637da0dc297791bb98f764a6a86675 10.0.0.54:21010
+   slots:[7339-7508] (170 slots) master
+M: cf8a71c209da986a710a80338b44e69fff334eb5 10.0.0.54:21011
+   slots:[8021-8191] (171 slots) master
+M: 57e68754723f64228c8941e0d72b5cde1f27962f 10.0.0.54:21012
+   slots:[8704-8874] (171 slots) master
+M: 1d257d7f96a6346398d7e9864c8bed64e8904fb5 10.0.0.54:21013
+   slots:[9387-9556] (170 slots) master
+M: 413d160d65827d7cecd145d60c03a1a6bfb5e394 10.0.0.54:21014
+   slots:[10069-10239] (171 slots) master
+M: 22c12ca788923c894d6ca239545f98b7fd9c05ef 10.0.0.54:21015
+   slots:[10752-10922] (171 slots) master
+M: b7114ddb72821079e57fd8cdafd2ac32a9c5548e 10.0.0.54:21016
+   slots:[11435-11604] (170 slots) master
+M: 11b82e399025649f6f0d6b6d590b836377a8d90e 10.0.0.54:21017
+   slots:[12117-12287] (171 slots) master
+M: 95c6ed57a59bafdd22652d862cbd5fb94e562f5d 10.0.0.54:21018
+   slots:[12800-12970] (171 slots) master
+M: 97e2e915e6238d40fb36332b9b318cefe815c128 10.0.0.54:21019
+   slots:[13483-13652] (170 slots) master
+M: b284b2a304a655233346b1cd54424820871e0f06 10.0.0.54:21020
+   slots:[14165-14335] (171 slots) master
+M: 69122f624c2b88884b7602d790095b2fc8a8734e 10.0.0.54:21021
+   slots:[14848-15018] (171 slots) master
+M: 2249d1367b62cfeb492b9988084049150d40f6fa 10.0.0.54:21022
+   slots:[15531-15700] (170 slots) master
+M: 134f412d6addc5ea1483e024617716eec84c3aa6 10.0.0.54:21023
+   slots:[16213-16383] (171 slots) master
+Can I set the above configuration? (type 'yes' to accept): [29;1m>>> Nodes configuration updated
+[0m[29;1m>>> Assign a different config epoch to each node
+[0m[29;1m>>> Sending CLUSTER MEET messages to join the cluster
+[0mWaiting for the cluster to join
+...............
+[29;1m>>> Performing Cluster Check (using node 10.0.0.51:21000)
+[0mM: 49134f26146d20ec02b20967881cb8dd702f5182 10.0.0.51:21000
+   slots:[0-170] (171 slots) master
+M: 1b3d48afed410728e6abea7b762826c250b51634 10.0.0.51:21022
+   slots:[15019-15188] (170 slots) master
+M: 1167840c9bd5b446898eff72c6557ad25ff2d927 10.0.0.52:21014
+   slots:[9728-9898] (171 slots) master
+M: 8abec752525863480f7ad52b612acc72713a7bbc 10.0.0.54:21001
+   slots:[1195-1364] (170 slots) master
+M: 1d257d7f96a6346398d7e9864c8bed64e8904fb5 10.0.0.54:21013
+   slots:[9387-9556] (170 slots) master
+M: 53a765aca58d554b24cf07c6a7bcb5b733014270 10.0.0.53:21016
+   slots:[11264-11434] (171 slots) master
+M: a9bf57a480714fd24719481cd32a1a0fe1376940 10.0.0.51:21002
+   slots:[1365-1535] (171 slots) master
+M: 11b82e399025649f6f0d6b6d590b836377a8d90e 10.0.0.54:21017
+   slots:[12117-12287] (171 slots) master
+M: afc75cdfbf6e21268f9f7ad2892552abb6a8ee33 10.0.0.51:21020
+   slots:[13653-13823] (171 slots) master
+M: c1db014aef46300ff74c5fafb2bf7e04197c631a 10.0.0.52:21021
+   slots:[14507-14676] (170 slots) master
+M: 3a5dac00020b9445c0688c7d17545ff2cebf0d18 10.0.0.51:21007
+   slots:[4779-4948] (170 slots) master
+M: 82800da9fc23908efb6f28ad2449538d92c5a6ef 10.0.0.51:21010
+   slots:[6827-6996] (170 slots) master
+M: 9c69d5c65bca94a2ce66a93309baad3c0d8003b6 10.0.0.51:21003
+   slots:[2048-2218] (171 slots) master
+M: 5897d3cd9a9baa5d5b1520bc6bae9f2d60c887f5 10.0.0.51:21001
+   slots:[683-852] (170 slots) master
+M: 5c2bf4802a31dfb71e8cb070ccbbe1a9cf04e159 10.0.0.53:21000
+   slots:[341-511] (171 slots) master
+M: 97e2e915e6238d40fb36332b9b318cefe815c128 10.0.0.54:21019
+   slots:[13483-13652] (170 slots) master
+M: cf50aa408930a7b3ca8938c95a466355a72629ca 10.0.0.52:21018
+   slots:[12459-12628] (170 slots) master
+M: 656324e6e2996f15ce548f943c54a87e32fc2681 10.0.0.52:21012
+   slots:[8363-8532] (170 slots) master
+M: 91e36bb90a31f403c2fc0f8f17d0e3ddec89813d 10.0.0.54:21003
+   slots:[2560-2730] (171 slots) master
+M: b284b2a304a655233346b1cd54424820871e0f06 10.0.0.54:21020
+   slots:[14165-14335] (171 slots) master
+M: ade9c4c7bc25ca953e883a863834f5bf8658f8d6 10.0.0.51:21016
+   slots:[10923-11092] (170 slots) master
+M: 033f7920fb230d6e6f2ef32e2fdf7aa1bf155a85 10.0.0.53:21009
+   slots:[6485-6655] (171 slots) master
+M: 83f7724f2ae383a545a09bd269f9ef9b080ae9a1 10.0.0.53:21023
+   slots:[16043-16212] (170 slots) master
+M: df90ba3f55966d7acafacb4612c6acb06f07cdb6 10.0.0.51:21004
+   slots:[2731-2900] (170 slots) master
+M: 84704adaf3248195ce11befd88950b5451f5687b 10.0.0.52:21003
+   slots:[2219-2388] (170 slots) master
+M: 835b0ed0bdd44d3b3e6ca5687cc7fbe7d3b8d640 10.0.0.53:21012
+   slots:[8533-8703] (171 slots) master
+M: 6b0ef4da9162221201602a4a4676d9f969dcacc9 10.0.0.53:21013
+   slots:[9216-9386] (171 slots) master
+M: 1daa20cc658b4f7ab57f94b0cbfad669c490d22a 10.0.0.53:21002
+   slots:[1707-1876] (170 slots) master
+M: 9415811f9f05b846f799ae51d5c652fccc030b19 10.0.0.52:21023
+   slots:[15872-16042] (171 slots) master
+M: 413d160d65827d7cecd145d60c03a1a6bfb5e394 10.0.0.54:21014
+   slots:[10069-10239] (171 slots) master
+M: 7e27e0aa7897f40a151fc3e8bc57007bac00e8b1 10.0.0.52:21022
+   slots:[15189-15359] (171 slots) master
+M: c030bc8036a4e656f409f3fa9e59303175cf1e30 10.0.0.51:21019
+   slots:[12971-13140] (170 slots) master
+M: 5c47f80c06e41d33c5d91408626348a368e46e40 10.0.0.52:21020
+   slots:[13824-13994] (171 slots) master
+M: d2c376737c2a8157c71a4e8956be3f06a85f1ade 10.0.0.51:21017
+   slots:[11605-11775] (171 slots) master
+M: 6ca495a2b1c03729b8d0c72bc463327679cab2ba 10.0.0.52:21005
+   slots:[3584-3754] (171 slots) master
+M: 22c12ca788923c894d6ca239545f98b7fd9c05ef 10.0.0.54:21015
+   slots:[10752-10922] (171 slots) master
+M: ec6a9d2489ec583d351e2eadab451dcca1c4100d 10.0.0.51:21014
+   slots:[9557-9727] (171 slots) master
+M: cc71b82967fab8aba3bafa21e64f1e18e1a47c55 10.0.0.52:21002
+   slots:[1536-1706] (171 slots) master
+M: 8c2b9aa688ff39313d6cab96b80135d241b4650b 10.0.0.52:21006
+   slots:[4267-4436] (170 slots) master
+M: a98e97bfa76fc49bdca0502966143f8df9385bff 10.0.0.52:21007
+   slots:[4949-5119] (171 slots) master
+M: 8b5dbe0e746ea5c2b1601e27c29a7175734b6f75 10.0.0.51:21008
+   slots:[5461-5631] (171 slots) master
+M: 5ebac809be0924f357ace3fe3386b9ab53a2f84c 10.0.0.53:21015
+   slots:[10581-10751] (171 slots) master
+M: f40406352f6debb3394c2316cc3afd87bd19e307 10.0.0.52:21001
+   slots:[853-1023] (171 slots) master
+M: c801b1701747b84d5d820b67807fe95ad81b4e5a 10.0.0.53:21010
+   slots:[7168-7338] (171 slots) master
+M: 1cc9dbf4792b5754f906d46f47bdf7a6a6cc4f8c 10.0.0.54:21000
+   slots:[512-682] (171 slots) master
+M: b62268b8bcf9a9029e42741c49b270a7c95af085 10.0.0.52:21009
+   slots:[6315-6484] (170 slots) master
+M: 134f412d6addc5ea1483e024617716eec84c3aa6 10.0.0.54:21023
+   slots:[16213-16383] (171 slots) master
+M: e488b6cd97ba795d606929e94f4a3295335f55bf 10.0.0.53:21022
+   slots:[15360-15530] (171 slots) master
+M: c8827ea33e637da0dc297791bb98f764a6a86675 10.0.0.54:21010
+   slots:[7339-7508] (170 slots) master
+M: 4e7979430ac8c44f3c4360a5029ebb84c8cf8701 10.0.0.54:21002
+   slots:[1877-2047] (171 slots) master
+M: b149f1485bc8c28bcb2fec4a11e89dabe4fc1037 10.0.0.51:21011
+   slots:[7509-7679] (171 slots) master
+M: 8c10355e8801de04cc8017183f846aa714c0d028 10.0.0.53:21018
+   slots:[12629-12799] (171 slots) master
+M: 21529aefc00000946bec12aa3bc9b57981ddb51a 10.0.0.53:21008
+   slots:[5803-5972] (170 slots) master
+M: 1dbab213d5ad81c735e919cbd0b3335ef4514246 10.0.0.52:21017
+   slots:[11776-11946] (171 slots) master
+M: 695a8c774b87e2f1c502a610b3c97b6da759433a 10.0.0.51:21005
+   slots:[3413-3583] (171 slots) master
+M: c311de0942aafe1682944b6ecc592a7eace16dd6 10.0.0.52:21019
+   slots:[13141-13311] (171 slots) master
+M: d29f1ed67f9bc5070a3efc07bef8beb7c892c411 10.0.0.52:21010
+   slots:[6997-7167] (171 slots) master
+M: 6549f856d5958a636b936d398c6b8784d6b2f36c 10.0.0.51:21012
+   slots:[8192-8362] (171 slots) master
+M: c77a43c9fe83b48013580b34aa046e275f3c9c5c 10.0.0.52:21008
+   slots:[5632-5802] (171 slots) master
+M: f6c20046521a9a0ef3cdab0598f779ea5637d4e9 10.0.0.51:21009
+   slots:[6144-6314] (171 slots) master
+M: 357ab7e1fb3505ce6ceaeb0c0377f748fcfd9dac 10.0.0.51:21023
+   slots:[15701-15871] (171 slots) master
+M: 17fe1f5ffcdf51fe0e33e319364128c7b7d5f6db 10.0.0.53:21004
+   slots:[3072-3242] (171 slots) master
+M: baafb3b665e9fff5bfecec711bf380e64e9d99db 10.0.0.51:21006
+   slots:[4096-4266] (171 slots) master
+M: 64dd993326d025698ea6634fd81f7e0878480f35 10.0.0.52:21004
+   slots:[2901-3071] (171 slots) master
+M: f5ae30319726ab8939000d9d675cadf451ebbb39 10.0.0.53:21014
+   slots:[9899-10068] (170 slots) master
+M: 1fef4c0bdb9f89c7091c68d322649529b263b1f6 10.0.0.51:21015
+   slots:[10240-10410] (171 slots) master
+M: 309dc4c78ecd89d0d13e86276810fdba9d786b1e 10.0.0.51:21013
+   slots:[8875-9044] (170 slots) master
+M: deb1b3450285895d39917b58ede1b28fd4b509ed 10.0.0.53:21021
+   slots:[14677-14847] (171 slots) master
+M: 24bbdf61c6c8f705255a105992de5def84de18ba 10.0.0.54:21006
+   slots:[4608-4778] (171 slots) master
+M: 51a8b30c8164866e6d2c2e9640ed06658f6a7458 10.0.0.54:21007
+   slots:[5291-5460] (170 slots) master
+M: 49f1a6f4af75638e6d47d0249d37a07a1ca12791 10.0.0.52:21015
+   slots:[10411-10580] (170 slots) master
+M: fe41fc599b9c69ffb2637ed4f5905f2df0c1ddaf 10.0.0.54:21004
+   slots:[3243-3412] (170 slots) master
+M: 6215a1fc1f39ebb0204473bcca27507d5194824b 10.0.0.52:21000
+   slots:[171-340] (170 slots) master
+M: d2098f1f420c3e0f5794cecadcf5f9ba81cfcfad 10.0.0.53:21017
+   slots:[11947-12116] (170 slots) master
+M: 69122f624c2b88884b7602d790095b2fc8a8734e 10.0.0.54:21021
+   slots:[14848-15018] (171 slots) master
+M: 8b1615ed52b24a47b1212d63ca3ea63d3bf05304 10.0.0.52:21011
+   slots:[7680-7850] (171 slots) master
+M: 829ce7854906fbcd409834ebd0b9aae2ede131a7 10.0.0.52:21013
+   slots:[9045-9215] (171 slots) master
+M: a411c8813fa544f4d8eb0e598743e78d3973c3a1 10.0.0.53:21003
+   slots:[2389-2559] (171 slots) master
+M: 100c027684746cae995fa528d29046d8cce8d188 10.0.0.54:21009
+   slots:[6656-6826] (171 slots) master
+M: b773a790d36f25b4b3f77deb9046748e874a9f92 10.0.0.52:21016
+   slots:[11093-11263] (171 slots) master
+M: 4eef1a83b09a503e2bc42d166934609d42116cbf 10.0.0.53:21019
+   slots:[13312-13482] (171 slots) master
+M: 35a8afbdb8da49232591724d0097a0c82e87ac2c 10.0.0.53:21011
+   slots:[7851-8020] (170 slots) master
+M: 774fa44fc11e60ad2da20db26b6f9e9742ab6108 10.0.0.53:21001
+   slots:[1024-1194] (171 slots) master
+M: 95c6ed57a59bafdd22652d862cbd5fb94e562f5d 10.0.0.54:21018
+   slots:[12800-12970] (171 slots) master
+M: b7114ddb72821079e57fd8cdafd2ac32a9c5548e 10.0.0.54:21016
+   slots:[11435-11604] (170 slots) master
+M: 2249d1367b62cfeb492b9988084049150d40f6fa 10.0.0.54:21022
+   slots:[15531-15700] (170 slots) master
+M: 7427d603fe60e3b8f340fd741c194ad102892990 10.0.0.54:21005
+   slots:[3925-4095] (171 slots) master
+M: 5c9190a3e8d415656019d0403c97843598f470d7 10.0.0.53:21005
+   slots:[3755-3924] (170 slots) master
+M: a0847bd74985a0f5928cd30e6a30fbb2c3d5591a 10.0.0.51:21021
+   slots:[14336-14506] (171 slots) master
+M: a41c56884965aa6773492c633c3d1360b4396a0b 10.0.0.53:21020
+   slots:[13995-14164] (170 slots) master
+M: cf8a71c209da986a710a80338b44e69fff334eb5 10.0.0.54:21011
+   slots:[8021-8191] (171 slots) master
+M: 7155d8760306071803f69312a1e02176412abf00 10.0.0.53:21006
+   slots:[4437-4607] (171 slots) master
+M: 7b3cd09c224a3d99337ecaf70589048d14623e55 10.0.0.53:21007
+   slots:[5120-5290] (171 slots) master
+M: 4a3d2e19e2163f25991b22de1aebad6d4e247ab4 10.0.0.51:21018
+   slots:[12288-12458] (171 slots) master
+M: 089a18c4da206b2ccf17e2af76a6a98a1fc78fd7 10.0.0.54:21008
+   slots:[5973-6143] (171 slots) master
+M: 57e68754723f64228c8941e0d72b5cde1f27962f 10.0.0.54:21012
+   slots:[8704-8874] (171 slots) master
+[32;1m[OK] All nodes agree about slots configuration.
+[0m[29;1m>>> Check for open slots...
+[0m[29;1m>>> Check slots coverage...
+[0m[32;1m[OK] All 16384 slots covered.
+[0mInstance num = 96
+Load Begin
+Load End
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+1 100
+Run Begin
+RUN ENd
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+cp: cannot stat '/home/wangep/data/redis-monitor/*': No such file or directory
+node1
+node2
+node3
+node4
